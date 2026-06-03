@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "directory": "Direktori",
+    "how_it_works": "Cara Kerja",
+    "source": "Sumber",
+    "theme_light": "Terang",
+    "theme_dark": "Gelap"
+  },
+  "hero": {
+    "title": "Direktori API AI Gratis",
+    "subtitle": "Kumpulan API LLM (Large Language Model) gratis yang menyediakan free tier, open-source, dan free credits untuk developer.",
+    "cta": "Cari Provider",
+    "badge_models": "Ratusan model gratis"
+  },
+  "directory": {
+    "how_it_works_title": "Cara Kerja Agregator",
+    "how_it_works_desc": "Sistem kami beroperasi secara otomatis (100% backend-less). Setiap malam pada pukul 00:00 UTC, robot GitHub Actions akan mengambil data mentah dari berbagai sumber API komunitas yang tersedia. Data tersebut kemudian dibersihkan, distandardisasi, dan digabung menjadi satu file tunggal. Karena situs ini dikompilasi secara statis, Anda bisa mencari dan memfilter daftar ini nyaris tanpa waktu loading!",
+    "search_placeholder": "Cari provider atau model...",
+    "filter_all": "Semua",
+    "sort_popular": "Paling Populer",
+    "sort_name": "Nama (A-Z)",
+    "sort_models": "Model Terbanyak",
+    "view_btn": "Lihat",
+    "models": "model",
+    "unknown": "Tidak diketahui",
+    "no_desc": "Tidak ada deskripsi tambahan.",
+    "table_provider": "Provider",
+    "table_capabilities": "Kemampuan",
+    "table_ratelimit": "Rate limit",
+    "table_notes": "Catatan",
+    "table_action": "Aksi",
+    "source_title": "Sumber Data",
+    "source_desc": "Informasi pada situs ini dihimpun secara otomatis dari sumber terbuka seperti komunitas",
+    "source_desc_2": "Peran kami murni sebagai pengumpul (agregator) agar Anda lebih mudah mencarinya. Kami bukanlah pemilik data tersebut, dan bukan pula pihak yang memverifikasi keakuratannya. Setiap profil provider yang tampil merupakan hasil sinkronisasi mentah dari gabungan referensi di atas."
+  },
+  "provider": {
+    "back": "Kembali",
+    "modality": "Modalitas",
+    "free_rate_limit": "Batas Gratis (Rate Limit)",
+    "notes": "Catatan Tambahan",
+    "models": "Model",
+    "available_models": "Daftar Model Tersedia",
+    "model_name": "Nama Model",
+    "context_window": "Konteks",
+    "description": "Deskripsi Singkat"
+  },
+  "footer": {
+    "text": "Direktori API AI gratis, di-aggregate otomatis dari sumber komunitas."
+  }
+}

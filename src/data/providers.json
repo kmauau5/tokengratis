@@ -2,13 +2,17 @@
   {
     "id": "deepseek",
     "name": "DeepSeek",
-    "logo": "https://tokengratis.id/logos/deepseek.png",
+    "logo": "/logos/deepseek.svg",
     "models_count": 2,
     "type": "Provider API",
     "rate_limit": "5M token",
     "description": "5M free tokens on signup, no credit card.",
     "modalities": [
       "text"
+    ],
+    "models": [
+      { "name": "deepseek-chat", "context": "64k", "description": "Model andalan untuk percakapan umum dan penalaran kompleks." },
+      { "name": "deepseek-coder", "context": "16k", "description": "Model yang dilatih secara khusus untuk menulis dan menganalisis kode." }
     ]
   },
   {
@@ -21,15 +25,19 @@
       "audio",
       "video"
     ],
-    "logo": "https://tokengratis.id/logos/google-gemini.png",
+    "logo": "/logos/gemini.svg",
     "type": "Provider API",
     "rate_limit": "Free tier available",
-    "description": "Free tier unavailable in EU/UK/Switzerland."
+    "description": "Free tier unavailable in EU/UK/Switzerland.",
+    "models": [
+      { "name": "gemini-1.5-flash", "context": "1M", "description": "Sangat cepat dan efisien untuk tugas teks dan multimodal umum." },
+      { "name": "gemini-1.5-pro", "context": "2M", "description": "Model tercanggih Google untuk penalaran berat dan konteks masif." }
+    ]
   },
   {
     "id": "groq",
     "name": "Groq",
-    "logo": "https://tokengratis.id/logos/groq.png",
+    "logo": "/logos/groq.svg",
     "models_count": 20,
     "type": "Inference",
     "rate_limit": "Free tier, no credit card",
@@ -38,12 +46,16 @@
       "text",
       "vision",
       "audio"
+    ],
+    "models": [
+      { "name": "llama3-8b-8192", "context": "8k", "description": "Llama 3 8B dengan kecepatan token per detik (LPU) yang luar biasa cepat." },
+      { "name": "mixtral-8x7b-32768", "context": "32k", "description": "Model campuran (MoE) dari Mistral untuk efisiensi tinggi." }
     ]
   },
   {
     "id": "openrouter",
     "name": "OpenRouter",
-    "logo": "https://tokengratis.id/logos/openrouter.png",
+    "logo": "/logos/openrouter.svg",
     "models_count": 47,
     "type": "Inference",
     "rate_limit": "~28 model free",
@@ -53,6 +65,10 @@
       "image",
       "audio",
       "code"
+    ],
+    "models": [
+      { "name": "meta-llama/llama-3-8b-instruct:free", "context": "8k", "description": "Versi gratis dari Llama 3 yang di-host oleh OpenRouter." },
+      { "name": "google/gemma-7b-it:free", "context": "8k", "description": "Model open-weights Gemma 7B gratis." }
     ]
   }
 ]

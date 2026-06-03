@@ -1,0 +1,50 @@
+{
+  "nav": {
+    "directory": "Directory",
+    "how_it_works": "How it Works",
+    "source": "Sources",
+    "theme_light": "Light",
+    "theme_dark": "Dark"
+  },
+  "hero": {
+    "title": "Free AI API Directory",
+    "subtitle": "A collection of free tier, open-source, and free credits LLM APIs for developers.",
+    "cta": "Find Providers",
+    "badge_models": "Hundreds of free models"
+  },
+  "directory": {
+    "how_it_works_title": "How Our Aggregator Works",
+    "how_it_works_desc": "Our system operates entirely automatically (100% backend-less). Every night at 00:00 UTC, a GitHub Actions robot fetches raw data from various available community API sources. The data is then cleaned, standardized, and merged into a single file. Because this site is statically compiled, you can search and filter this list with nearly zero loading time!",
+    "search_placeholder": "Search provider or model...",
+    "filter_all": "All",
+    "sort_popular": "Most Popular",
+    "sort_name": "Name (A-Z)",
+    "sort_models": "Most Models",
+    "view_btn": "View",
+    "models": "models",
+    "unknown": "Unknown",
+    "no_desc": "No additional description available.",
+    "table_provider": "Provider",
+    "table_capabilities": "Capabilities",
+    "table_ratelimit": "Rate limit",
+    "table_notes": "Notes",
+    "table_action": "Action",
+    "source_title": "Data Sources",
+    "source_desc": "Information on this site is automatically aggregated from open community sources such as",
+    "source_desc_2": "Our role is strictly as an aggregator to make searching easier for you. We do not own this data, nor do we verify its absolute accuracy. Each provider profile displayed is the result of raw synchronization from the combined references above."
+  },
+  "provider": {
+    "back": "Back",
+    "modality": "Modality",
+    "free_rate_limit": "Free Rate Limit",
+    "notes": "Notes",
+    "models": "Models",
+    "available_models": "Available Models",
+    "model_name": "Model Name",
+    "context_window": "Context",
+    "description": "Description"
+  },
+  "footer": {
+    "text": "Free AI API directory, automatically aggregated from community sources."
+  }
+}

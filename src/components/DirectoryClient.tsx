@@ -16,7 +16,7 @@ interface Provider {
   modalities: string[];
 }
 
-export default function DirectoryClient({ providers }: { providers: Provider[] }) {
+export default function DirectoryClient({ providers, dict, lang }: { providers: Provider[], dict: any, lang: string }) {
   const [activeFilter, setActiveFilter] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [sortMode, setSortMode] = useState<string>("popular");
@@ -53,51 +53,62 @@ export default function DirectoryClient({ providers }: { providers: Provider[] }
             <img src="/logo.png" alt="TokenAIFree Logo" style={{ height: "36px", width: "auto" }} />
           </a>
           <div className={styles.navLinks}>
-            <a href="#direktori">Direktori</a>
-            <a href="#cara-kerja">Cara kerja</a>
-            <a href="#sumber">Sumber</a>
+            <a href="#direktori">{dict.nav.directory}</a>
+            <a href="#cara-kerja">{dict.nav.how_it_works}</a>
+            <a href="#sumber">{dict.nav.source}</a>
+          </div>
+          
+          <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
+            <div className={styles.langSwitcher}>
+              <a href={lang === 'en' ? '/id' : '/en'} style={{ fontSize: "14px", fontWeight: "600", color: "var(--color-fog)", padding: "4px 8px", backgroundColor: "var(--color-glass-active)", borderRadius: "4px" }}>
+                {lang === 'en' ? 'ID' : 'EN'}
+              </a>
+            </div>
             {mounted && (
-              <button 
+              <button
                 onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
                 className={styles.themeToggle}
-                aria-label="Toggle theme"
+                aria-label="Toggle Theme"
               >
-                {resolvedTheme === "dark" ? "☀️ Terang" : "🌙 Gelap"}
+                {resolvedTheme === "dark" ? `☀️ ${dict.nav.theme_light}` : `🌙 ${dict.nav.theme_dark}`}
               </button>
             )}
+            <a href="#direktori" className="btn-primary" style={{ padding: "6px 12px", fontSize: "13px" }}>
+              {dict.directory.view_btn}
+            </a>
           </div>
-          <a href="#direktori" className="btn-primary">
-            Lihat direktori
-          </a>
         </nav>
       </header>
 
       <main className="container">
         <section className={styles.hero}>
-          <h1 className={styles.title}>
-            API AI yang bisa<br />dipake gratis
-          </h1>
+          <h1 className={styles.title}>{dict.hero.title}</h1>
           <p className={styles.subtitle}>
-            Free tier & free credits API LLM — di-aggregate otomatis dari sumber komunitas. Tiap provider nampilin model, context window, rate limit & modality apa adanya.
+            {dict.hero.subtitle}
           </p>
-          <span className="badge-success">
-            ✅ {providers.length} provider · Ratusan model gratis
-          </span>
+          <div style={{ marginBottom: "24px" }}>
+            <span className="badge-success">
+              ✅ {providers.length} providers · {dict.hero.badge_models}
+            </span>
+          </div>
+          <a href="#direktori" className="btn-primary" style={{ display: "inline-block", textDecoration: "none" }}>
+            {dict.hero.cta}
+          </a>
         </section>
 
         <section id="cara-kerja" className={styles.sourceSection} style={{ marginTop: "32px" }}>
-          <h2 className={styles.sectionTitle}>Cara Kerja Agregator</h2>
+          <h2 className={styles.sectionTitle}>{dict.directory.how_it_works_title}</h2>
           <p className={styles.sourceText}>
-            Sistem kami beroperasi secara otomatis (100% backend-less). Setiap malam pada pukul 00:00 UTC, robot <i>GitHub Actions</i> akan mengambil data mentah dari berbagai sumber API komunitas yang tersedia. Data tersebut kemudian dibersihkan, distandardisasi, dan digabung menjadi satu <i>file</i> tunggal. Karena situs ini dikompilasi secara statis, Anda bisa mencari dan memfilter daftar ini nyaris tanpa waktu <i>loading</i>!
+            {dict.directory.how_it_works_desc}
           </p>
         </section>
 
         <section id="direktori" className={styles.directorySection}>
           <div className={styles.controls}>
             <input 
-              type="search" 
-              placeholder="Cari provider atau model — Gemini, Groq, DeepSeek..." 
-              className="input-search"
+              type="text" 
+              className="input-search" 
+              placeholder={dict.directory.search_placeholder}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
@@ -109,7 +120,7 @@ export default function DirectoryClient({ providers }: { providers: Provider[] }
                     onClick={() => setActiveFilter(f)}
                     className={`${styles.filterBtn} ${activeFilter === f ? styles.filterBtnActive : ""}`}
                   >
-                    {f === "all" ? "Semua" : f.charAt(0).toUpperCase() + f.slice(1)}
+                    {f === "all" ? dict.directory.filter_all : f.charAt(0).toUpperCase() + f.slice(1)}
                   </button>
                 ))}
               </div>
@@ -119,24 +130,24 @@ export default function DirectoryClient({ providers }: { providers: Provider[] }
                 value={sortMode}
                 onChange={(e) => setSortMode(e.target.value)}
               >
-                <option value="popular">Paling Populer</option>
-                <option value="name">Nama (A-Z)</option>
-                <option value="models">Model Terbanyak</option>
+                <option value="popular">{dict.directory.sort_popular}</option>
+                <option value="name">{dict.directory.sort_name}</option>
+                <option value="models">{dict.directory.sort_models}</option>
               </select>
             </div>
           </div>
 
           <div className={styles.grid}>
             <div className={styles.tableHeader}>
-              <span>Provider</span>
-              <span>Kemampuan</span>
-              <span>Rate limit</span>
-              <span>Catatan</span>
-              <span style={{ textAlign: "right" }}>Aksi</span>
+              <span>{dict.directory.table_provider}</span>
+              <span>{dict.directory.table_capabilities}</span>
+              <span>{dict.directory.table_ratelimit}</span>
+              <span>{dict.directory.table_notes}</span>
+              <span style={{ textAlign: "right" }}>{dict.directory.table_action}</span>
             </div>
             
             {filteredProviders.map((provider) => (
-              <a key={provider.id} href={`/provider/${provider.id}`} className={styles.providerRow + " card"}>
+              <a key={provider.id} href={`/${lang}/provider/${provider.id}`} className={styles.providerRow + " card"}>
                 <div className={styles.providerHeader}>
                   <div className={styles.providerLogo}>
                     {provider.logo ? (
@@ -148,30 +159,28 @@ export default function DirectoryClient({ providers }: { providers: Provider[] }
                   <div>
                     <span className={styles.providerName}>{provider.name}</span>
                     <div className={styles.providerMeta}>
-                      <span className={styles.modelsCount}>{provider.models_count} model</span>
+                      <span className={styles.modelsCount}>{provider.models_count} {dict.directory.models}</span>
                       {provider.type && <span className={styles.providerType}>{provider.type}</span>}
                     </div>
                   </div>
                 </div>
-
+                
                 <div className={styles.modalityIcons}>
-                  {provider.modalities.map(m => (
+                  {provider.modalities.map((m) => (
                     <span key={m} className={styles.modalityIcon} title={m}>
-                      {m === 'text' ? 'T' : m.charAt(0).toUpperCase()}
+                      {m.charAt(0).toUpperCase()}
                     </span>
                   ))}
                 </div>
-
-                {provider.rate_limit && (
-                  <div className={styles.rateLimit}>{provider.rate_limit}</div>
-                )}
-
-                {provider.description && (
-                  <p className={styles.description}>{provider.description}</p>
-                )}
-
+                
+                <div className={styles.rateLimit}>{provider.rate_limit || dict.directory.unknown}</div>
+                
+                <div className={styles.description}>
+                  {provider.description || dict.directory.no_desc}
+                </div>
+                
                 <div className={styles.actions}>
-                  <span className="btn-primary" style={{ padding: "6px 12px", fontSize: "13px" }}>Lihat</span>
+                  <span className="btn-primary" style={{ fontSize: "12px", padding: "6px 12px" }}>{dict.directory.view_btn}</span>
                 </div>
               </a>
             ))}
@@ -179,18 +188,18 @@ export default function DirectoryClient({ providers }: { providers: Provider[] }
         </section>
 
         <section id="sumber" className={styles.sourceSection}>
-          <h2 className={styles.sectionTitle}>Sumber Data</h2>
+          <h2 className={styles.sectionTitle}>{dict.directory.source_title}</h2>
           <p className={styles.sourceText}>
-            Informasi pada situs ini dihimpun secara otomatis dari sumber terbuka seperti komunitas <a href="https://freellm.net" target="_blank" rel="noreferrer" className={styles.sourceLink}>freellm.net</a>, <a href="https://github.com/mnfst/awesome-free-llm-apis" target="_blank" rel="noreferrer" className={styles.sourceLink}>mnfst/awesome-free-llm-apis</a>, dan <a href="https://github.com/cheahjs/free-llm-api-resources" target="_blank" rel="noreferrer" className={styles.sourceLink}>cheahjs/free-llm-api-resources</a>.
+            {dict.directory.source_desc} <a href="https://freellm.net" target="_blank" rel="noreferrer" className={styles.sourceLink}>freellm.net</a>, <a href="https://github.com/mnfst/awesome-free-llm-apis" target="_blank" rel="noreferrer" className={styles.sourceLink}>mnfst/awesome-free-llm-apis</a>, dan <a href="https://github.com/cheahjs/free-llm-api-resources" target="_blank" rel="noreferrer" className={styles.sourceLink}>cheahjs/free-llm-api-resources</a>.
             <br /><br />
-            Peran kami murni sebagai pengumpul (agregator) agar Anda lebih mudah mencarinya. Kami bukanlah pemilik data tersebut, dan bukan pula pihak yang memverifikasi keakuratannya. Setiap profil <i>provider</i> yang tampil merupakan hasil sinkronisasi mentah dari gabungan referensi di atas.
+            {dict.directory.source_desc_2}
           </p>
         </section>
       </main>
 
-      <footer style={{ marginTop: "80px", borderTop: "1px solid var(--color-ink-line)", padding: "40px 16px", textAlign: "center", color: "var(--color-mute)", fontSize: "14px" }}>
+      <footer className={styles.footer} style={{ marginTop: "80px", padding: "40px 16px", borderTop: "1px solid var(--color-ink-line)", textAlign: "center", color: "var(--color-mute)", fontSize: "14px" }}>
         <div className="container">
-          <p>© {new Date().getFullYear()} TokenAIFree. Direktori API AI gratis, di-aggregate otomatis dari sumber komunitas.</p>
+          <p>© {new Date().getFullYear()} TokenAIFree. {dict.footer.text}</p>
           <div style={{ display: "flex", justifyContent: "center", gap: "16px", marginTop: "16px" }}>
             <a href="https://github.com" target="_blank" rel="noreferrer" style={{ textDecoration: "underline" }}>GitHub</a>
             <a href="https://twitter.com" target="_blank" rel="noreferrer" style={{ textDecoration: "underline" }}>Twitter</a>

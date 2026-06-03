@@ -10,12 +10,15 @@
     "sync": "node sync.mjs"
   },
   "dependencies": {
+    "@formatjs/intl-localematcher": "^0.8.9",
+    "negotiator": "^1.0.0",
     "next": "16.2.7",
     "next-themes": "^0.4.6",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
   "devDependencies": {
+    "@types/negotiator": "^0.6.4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

@@ -1,8 +1,13 @@
 import fs from "fs/promises";
 import path from "path";
 import DirectoryClient from "@/components/DirectoryClient";
+import { getDictionary } from "@/app/dictionaries";
 
-export default async function Home() {
+export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
+  const resolvedParams = await params;
+  const lang = (resolvedParams.lang as 'en' | 'id') || 'en';
+  const dict = await getDictionary(lang);
+
   // Read static data at build time
   const dataPath = path.join(process.cwd(), "src", "data", "providers.json");
   let providers = [];
@@ -15,5 +20,5 @@ export default async function Home() {
     // Fallback if the file doesn't exist yet
   }
 
-  return <DirectoryClient providers={providers} />;
+  return <DirectoryClient providers={providers} dict={dict} lang={lang} />;
 }

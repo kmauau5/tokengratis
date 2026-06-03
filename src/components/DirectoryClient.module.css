@@ -14,16 +14,7 @@
   border-radius: var(--radius-full);
 }
 
-.logo {
-  font-family: var(--font-serif);
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: -0.02em;
-}
 
-.logo span {
-  color: var(--color-mute);
-}
 
 .navLinks {
   display: none;
@@ -302,6 +293,17 @@
   border: 1px solid var(--color-ink-line);
 }
 
+.logo {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--color-fog);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .sectionTitle {
   font-family: var(--font-serif);
   font-size: 24px;
@@ -325,6 +327,6 @@
 }
 
 .sourceLink:hover {
-  color: var(--color-ember);
-  text-decoration-color: var(--color-ember);
+  color: var(--color-primary);
+  text-decoration-color: var(--color-primary);
 }

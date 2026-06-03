@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import styles from "./DirectoryClient.module.css";
+import Logo from "./Logo";
 
 interface Provider {
   id: string;
@@ -18,6 +19,7 @@ interface Provider {
 export default function DirectoryClient({ providers }: { providers: Provider[] }) {
   const [activeFilter, setActiveFilter] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState<string>("");
+  const [sortMode, setSortMode] = useState<string>("popular");
   const { theme, setTheme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -33,6 +35,14 @@ export default function DirectoryClient({ providers }: { providers: Provider[] }
                           (p.description && p.description.toLowerCase().includes(searchQuery.toLowerCase()));
     
     return matchesFilter && matchesSearch;
+  }).sort((a, b) => {
+    if (sortMode === "name") {
+      return a.name.localeCompare(b.name);
+    } else if (sortMode === "models") {
+      return b.models_count - a.models_count;
+    }
+    // "popular" is default, we assume it's the original JSON order or we can just keep it as is
+    return 0; 
   });
 
   return (
@@ -40,7 +50,7 @@ export default function DirectoryClient({ providers }: { providers: Provider[] }
       <header className={styles.header}>
         <nav className={`${styles.nav} glass-nav`}>
           <a href="/" className={styles.logo}>
-            TokenAIFree
+            <img src="/logo.png" alt="TokenAIFree Logo" style={{ height: "36px", width: "auto" }} />
           </a>
           <div className={styles.navLinks}>
             <a href="#direktori">Direktori</a>
@@ -75,6 +85,13 @@ export default function DirectoryClient({ providers }: { providers: Provider[] }
           </span>
         </section>
 
+        <section id="cara-kerja" className={styles.sourceSection} style={{ marginTop: "32px" }}>
+          <h2 className={styles.sectionTitle}>Cara Kerja Agregator</h2>
+          <p className={styles.sourceText}>
+            Sistem kami beroperasi secara otomatis (100% backend-less). Setiap malam pada pukul 00:00 UTC, robot <i>GitHub Actions</i> akan mengambil data mentah dari berbagai sumber API komunitas yang tersedia. Data tersebut kemudian dibersihkan, distandardisasi, dan digabung menjadi satu <i>file</i> tunggal. Karena situs ini dikompilasi secara statis, Anda bisa mencari dan memfilter daftar ini nyaris tanpa waktu <i>loading</i>!
+          </p>
+        </section>
+
         <section id="direktori" className={styles.directorySection}>
           <div className={styles.controls}>
             <input 
@@ -84,16 +101,28 @@ export default function DirectoryClient({ providers }: { providers: Provider[] }
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
-            <div className={styles.filters}>
-              {filters.map((f) => (
-                <button
-                  key={f}
-                  onClick={() => setActiveFilter(f)}
-                  className={`${styles.filterBtn} ${activeFilter === f ? styles.filterBtnActive : ""}`}
-                >
-                  {f === "all" ? "Semua" : f.charAt(0).toUpperCase() + f.slice(1)}
-                </button>
-              ))}
+            <div className={styles.filters} style={{ display: "flex", justifyContent: "space-between", width: "100%" }}>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+                {filters.map((f) => (
+                  <button
+                    key={f}
+                    onClick={() => setActiveFilter(f)}
+                    className={`${styles.filterBtn} ${activeFilter === f ? styles.filterBtnActive : ""}`}
+                  >
+                    {f === "all" ? "Semua" : f.charAt(0).toUpperCase() + f.slice(1)}
+                  </button>
+                ))}
+              </div>
+              <select 
+                className="input-search" 
+                style={{ width: "auto", padding: "8px 12px", height: "fit-content" }}
+                value={sortMode}
+                onChange={(e) => setSortMode(e.target.value)}
+              >
+                <option value="popular">Paling Populer</option>
+                <option value="name">Nama (A-Z)</option>
+                <option value="models">Model Terbanyak</option>
+              </select>
             </div>
           </div>
 
@@ -107,7 +136,7 @@ export default function DirectoryClient({ providers }: { providers: Provider[] }
             </div>
             
             {filteredProviders.map((provider) => (
-              <a key={provider.id} href={`#${provider.id}`} className={styles.providerRow + " card"}>
+              <a key={provider.id} href={`/provider/${provider.id}`} className={styles.providerRow + " card"}>
                 <div className={styles.providerHeader}>
                   <div className={styles.providerLogo}>
                     {provider.logo ? (
@@ -163,9 +192,9 @@ export default function DirectoryClient({ providers }: { providers: Provider[] }
         <div className="container">
           <p>© {new Date().getFullYear()} TokenAIFree. Direktori API AI gratis, di-aggregate otomatis dari sumber komunitas.</p>
           <div style={{ display: "flex", justifyContent: "center", gap: "16px", marginTop: "16px" }}>
-            <a href="#" style={{ hover: "color: var(--color-fog)" }}>GitHub</a>
-            <a href="#" style={{ hover: "color: var(--color-fog)" }}>Twitter</a>
-            <a href="#" style={{ hover: "color: var(--color-fog)" }}>Discord</a>
+            <a href="https://github.com" target="_blank" rel="noreferrer" style={{ textDecoration: "underline" }}>GitHub</a>
+            <a href="https://twitter.com" target="_blank" rel="noreferrer" style={{ textDecoration: "underline" }}>Twitter</a>
+            <a href="https://discord.com" target="_blank" rel="noreferrer" style={{ textDecoration: "underline" }}>Discord</a>
           </div>
         </div>
       </footer>

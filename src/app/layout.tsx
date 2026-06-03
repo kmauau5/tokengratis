@@ -5,6 +5,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "TokenAIFree — Direktori API AI Gratis",
   description: "Kumpulan free tier & free credits API LLM, di-aggregate otomatis dari sumber komunitas.",
+  openGraph: {
+    images: ['/logo.png'],
+  },
 };
 
 export default function RootLayout({

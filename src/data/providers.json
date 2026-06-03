@@ -1,0 +1,58 @@
+[
+  {
+    "id": "deepseek",
+    "name": "DeepSeek",
+    "logo": "https://tokengratis.id/logos/deepseek.png",
+    "models_count": 2,
+    "type": "Provider API",
+    "rate_limit": "5M token",
+    "description": "5M free tokens on signup, no credit card.",
+    "modalities": [
+      "text"
+    ]
+  },
+  {
+    "id": "google-gemini",
+    "name": "Google Gemini",
+    "models_count": 14,
+    "modalities": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "logo": "https://tokengratis.id/logos/google-gemini.png",
+    "type": "Provider API",
+    "rate_limit": "Free tier available",
+    "description": "Free tier unavailable in EU/UK/Switzerland."
+  },
+  {
+    "id": "groq",
+    "name": "Groq",
+    "logo": "https://tokengratis.id/logos/groq.png",
+    "models_count": 20,
+    "type": "Inference",
+    "rate_limit": "Free tier, no credit card",
+    "description": "Ultra-fast LPU inference.",
+    "modalities": [
+      "text",
+      "vision",
+      "audio"
+    ]
+  },
+  {
+    "id": "openrouter",
+    "name": "OpenRouter",
+    "logo": "https://tokengratis.id/logos/openrouter.png",
+    "models_count": 47,
+    "type": "Inference",
+    "rate_limit": "~28 model free",
+    "description": "~28 free models. OpenAI SDK-compatible.",
+    "modalities": [
+      "text",
+      "image",
+      "audio",
+      "code"
+    ]
+  }
+]

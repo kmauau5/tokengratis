@@ -1,0 +1,139 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-mute);
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 48px;
+  transition: color 0.2s ease;
+}
+
+.backBtn:hover {
+  color: var(--color-fog);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--color-fog);
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: var(--color-mute);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--color-ink-soft);
+  border: 1px solid var(--color-ink-line);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--hover-color, var(--color-grass));
+  box-shadow: 0 12px 24px var(--hover-shadow, var(--color-grass-bg));
+}
+
+/* Specific glows removed in favor of dynamic CSS variables */
+
+.iconWrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: var(--color-primary-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  color: var(--color-fog);
+}
+
+.cardTitle {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-fog);
+  margin-bottom: 8px;
+}
+
+.cardDesc {
+  font-size: 0.95rem;
+  color: var(--color-mute);
+  margin-bottom: 32px;
+  flex-grow: 1;
+}
+
+.actionBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+}
+
+.btnPrimary {
+  background: var(--color-fog);
+  color: var(--color-ink);
+}
+
+.btnPrimary:hover {
+  opacity: 0.9;
+}
+
+.btnSecondary {
+  background: transparent;
+  border: 1px solid var(--color-ink-line);
+  color: var(--color-fog);
+}
+
+.btnSecondary:hover {
+  background: var(--color-ink-line);
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

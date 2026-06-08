@@ -148,3 +148,28 @@ button {
 .input-search::placeholder {
   color: var(--color-mute);
 }
+
+/* Clean Donate Button (9Router Style) */
+.btn-donate {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 12px;
+  height: 32px;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(236, 72, 153, 0.3); /* pink-500/30 */
+  background-color: rgba(236, 72, 153, 0.1); /* pink-500/10 */
+  color: #f472b6; /* pink-400 (Dark Mode) */
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  text-shadow: none;
+  box-shadow: none;
+}
+.btn-donate:hover {
+  background-color: rgba(236, 72, 153, 0.2); /* pink-500/20 */
+}
+[data-theme='light'] .btn-donate {
+  color: #db2777; /* pink-600 (Light Mode) */
+}

@@ -72,5 +72,19 @@
   },
   "footer": {
     "text": "Direktori API AI gratis, di-aggregate otomatis dari sumber komunitas."
+  },
+  "donate": {
+    "title": "Dukung Proyek Ini",
+    "subtitle": "Direktori ini 100% gratis, open-source, dan tanpa iklan. Dukungan Anda membantu kami membayar biaya server (Vercel/Cloudflare) dan menjaga GitHub Actions tetap menyala untuk sinkronisasi otomatis setiap hari.",
+    "back": "Kembali ke Direktori",
+    "saweria_title": "Saweria (QRIS/GoPay)",
+    "saweria_desc": "Donasi cepat untuk pengguna lokal Indonesia menggunakan berbagai e-wallet.",
+    "kofi_title": "Ko-Fi (PayPal/Card)",
+    "kofi_desc": "Dukungan via Ko-Fi untuk teman-teman secara global.",
+    "crypto_title": "Crypto Wallet",
+    "crypto_desc": "Kirimkan token USDT/BTC Anda secara desentralisasi.",
+    "btn_donate": "Donasi Sekarang",
+    "btn_copy": "Salin Alamat",
+    "copied": "Tersalin!"
   }
 }

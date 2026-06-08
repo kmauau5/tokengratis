@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { useTheme } from "next-themes";
 import styles from "./DirectoryClient.module.css";
 import Logo from "./Logo";
@@ -101,6 +102,15 @@ export default function DirectoryClient({ providers, dict, lang, lastUpdatedAt }
           </div>
           
           <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
+            <Link href={`/${lang}/donate`} className="btn-donate">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M11 14h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 16"/>
+                <path d="m7 20 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/>
+                <path d="m2 15 6 6"/>
+                <path d="M19.5 8.5 18 7l1.5-1.5a2.12 2.12 0 1 0-3-3l-1.5 1.5-1.5-1.5a2.12 2.12 0 1 0-3 3l1.5 1.5"/>
+              </svg>
+              <span>Donate</span>
+            </Link>
             <div className={styles.langSwitcher}>
               <a href={lang === 'en' ? '/id' : '/en'} style={{ fontSize: "14px", fontWeight: "600", color: "var(--color-fog)", padding: "4px 8px", backgroundColor: "var(--color-glass-active)", borderRadius: "4px" }}>
                 {lang === 'en' ? 'ID' : 'EN'}

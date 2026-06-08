@@ -72,5 +72,19 @@
   },
   "footer": {
     "text": "Free AI API directory, automatically aggregated from community sources."
+  },
+  "donate": {
+    "title": "Support This Project",
+    "subtitle": "This directory is 100% free, open-source, and ad-free. Your support helps us pay for server costs and keeps the GitHub Actions running for daily automatic syncs.",
+    "back": "Back to Directory",
+    "saweria_title": "Saweria (QRIS/GoPay)",
+    "saweria_desc": "Fast donation for Indonesian local users using e-wallets.",
+    "kofi_title": "Ko-Fi (PayPal/Card)",
+    "kofi_desc": "Support via Ko-Fi for our global friends.",
+    "crypto_title": "Crypto Wallet",
+    "crypto_desc": "Send USDT/BTC tokens decentrally.",
+    "btn_donate": "Donate Now",
+    "btn_copy": "Copy Address",
+    "copied": "Copied!"
   }
 }

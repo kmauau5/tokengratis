@@ -222,12 +222,19 @@ export default function ProviderDetailClient({ provider, models = [], dict, lang
 
             <div className={styles.sidebarSection} style={{ borderTop: "1px solid var(--color-ink-line)", paddingTop: "16px", marginTop: "16px" }}>
               <label className={styles.sidebarLabel}>{dict.provider.data_source}</label>
-              <p className={styles.sourceText}>
-                {dict.provider.data_source_desc1}
-              </p>
-              <p className={styles.sourceText}>
-                {dict.provider.data_source_desc2}
-              </p>
+              <div style={{ display: "flex", flexDirection: "column", gap: "8px", marginTop: "8px" }}>
+                {provider.sources && provider.sources.map((src: any, idx: number) => (
+                  <a key={idx} href={src.url} target="_blank" rel="noreferrer" className={styles.sourceLink} style={{ fontSize: "13px", color: "var(--color-ink)", textDecoration: "underline" }}>
+                    {src.name}
+                  </a>
+                ))}
+              </div>
+              {provider.lastSyncedAt && (
+                <p className={styles.sourceText} style={{ marginTop: "12px", fontSize: "12px", color: "var(--color-mute)" }}>
+                  Terakhir disinkronisasi:<br/>
+                  {new Date(provider.lastSyncedAt).toLocaleString('id-ID', { dateStyle: 'long', timeStyle: 'short' })}
+                </p>
+              )}
             </div>
 
           </div>

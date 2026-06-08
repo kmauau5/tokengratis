@@ -10,7 +10,9 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
 
   // Read static data at build time
   const dataPath = path.join(process.cwd(), "src", "data", "providers.json");
+  const lastUpdatedPath = path.join(process.cwd(), "src", "data", "last-updated.json");
   let providers = [];
+  let lastUpdatedAt = null;
   
   try {
     const fileContents = await fs.readFile(dataPath, "utf8");
@@ -20,5 +22,12 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
     // Fallback if the file doesn't exist yet
   }
 
-  return <DirectoryClient providers={providers} dict={dict} lang={lang} />;
+  try {
+    const fileContents = await fs.readFile(lastUpdatedPath, "utf8");
+    lastUpdatedAt = JSON.parse(fileContents).lastUpdatedAt;
+  } catch (error) {
+    // Silently ignore if not generated yet
+  }
+
+  return <DirectoryClient providers={providers} dict={dict} lang={lang} lastUpdatedAt={lastUpdatedAt} />;
 }

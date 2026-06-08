@@ -17,7 +17,7 @@ interface Provider {
   capabilities: string[];
 }
 
-export default function DirectoryClient({ providers, dict, lang }: { providers: Provider[], dict: any, lang: string }) {
+export default function DirectoryClient({ providers, dict, lang, lastUpdatedAt }: { providers: Provider[], dict: any, lang: string, lastUpdatedAt?: string }) {
   const [activeFilter, setActiveFilter] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [sortMode, setSortMode] = useState<string>("popular");
@@ -104,6 +104,11 @@ export default function DirectoryClient({ providers, dict, lang }: { providers: 
             <span className="badge-success">
               ✅ {providers.length} providers · {dict.hero.badge_models}
             </span>
+            {lastUpdatedAt && (
+              <span style={{ fontSize: "12px", color: "var(--color-mute)", marginLeft: "12px" }}>
+                Terakhir disinkronisasi: {new Date(lastUpdatedAt).toLocaleString('id-ID', { dateStyle: 'long', timeStyle: 'short' })}
+              </span>
+            )}
           </div>
           <a href="#direktori" className="btn-primary" style={{ display: "inline-block", textDecoration: "none" }}>
             {dict.hero.cta}

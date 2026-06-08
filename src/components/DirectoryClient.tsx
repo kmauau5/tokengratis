@@ -84,15 +84,16 @@ export default function DirectoryClient({ providers, dict, lang, lastUpdatedAt }
               <line x1="1" y1="14" x2="4" y2="14"></line>
             </svg>
             <span style={{ letterSpacing: "-0.5px" }}>
-              <span style={{ color: "var(--color-fog)" }}>Token</span>
               <span style={{ color: "#0ea5e9" }}>AI</span>
               <span style={{ 
                 background: "linear-gradient(to right, #0ea5e9, #a855f7)", 
                 WebkitBackgroundClip: "text", 
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
-                color: "transparent"
+                color: "transparent",
+                marginLeft: "4px"
               }}>Free</span>
+              <span style={{ color: "var(--color-fog)", marginLeft: "4px" }}>Token</span>
             </span>
           </a>
           <div className={styles.navLinks}>
@@ -289,8 +290,8 @@ export default function DirectoryClient({ providers, dict, lang, lastUpdatedAt }
       </main>
 
       <footer className={styles.footer} style={{ marginTop: "80px", padding: "40px 16px", borderTop: "1px solid var(--color-ink-line)", textAlign: "center", color: "var(--color-mute)", fontSize: "14px" }}>
-        <div className="container">
-          <p>© {new Date().getFullYear()} TokenAIFree. {dict.footer.text}</p>
+        <div className={styles.footerContent}>
+          <p>© {new Date().getFullYear()} AI Free Token. {dict.footer.text}</p>
           <div style={{ display: "flex", justifyContent: "center", gap: "16px", marginTop: "16px" }}>
             <a href="https://github.com" target="_blank" rel="noreferrer" style={{ textDecoration: "underline" }}>GitHub</a>
             <a href="https://twitter.com" target="_blank" rel="noreferrer" style={{ textDecoration: "underline" }}>Twitter</a>

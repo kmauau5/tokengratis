@@ -1,0 +1,3466 @@
+[
+  {
+    "id": "ai21-labs-jamba-large-17",
+    "providerSlug": "ai21-labs",
+    "modelId": "jamba-large-17",
+    "name": "Jamba Large 1.7",
+    "modality": [
+      "text"
+    ],
+    "context": "256K",
+    "output": "4K",
+    "rateLimit": "200 RPM, 10 RPS",
+    "source": "mnfst"
+  },
+  {
+    "id": "ai21-labs-jamba-mini-2",
+    "providerSlug": "ai21-labs",
+    "modelId": "jamba-mini-2",
+    "name": "Jamba Mini 2",
+    "modality": [
+      "text"
+    ],
+    "context": "256K",
+    "output": "4K",
+    "rateLimit": "200 RPM, 10 RPS",
+    "source": "mnfst"
+  },
+  {
+    "id": "aion-labs-aion-10",
+    "providerSlug": "aion-labs",
+    "modelId": "aion-10",
+    "name": "aion-1.0",
+    "modality": [
+      "text"
+    ],
+    "context": "131K",
+    "output": "~32K",
+    "rateLimit": "Daily token allowance",
+    "source": "mnfst"
+  },
+  {
+    "id": "aion-labs-aion-10-mini",
+    "providerSlug": "aion-labs",
+    "modelId": "aion-10-mini",
+    "name": "aion-1.0-mini",
+    "modality": [
+      "text"
+    ],
+    "context": "131K",
+    "output": "~32K",
+    "rateLimit": "Daily token allowance",
+    "source": "mnfst"
+  },
+  {
+    "id": "aion-labs-aion-20",
+    "providerSlug": "aion-labs",
+    "modelId": "aion-20",
+    "name": "aion-2.0",
+    "modality": [
+      "text"
+    ],
+    "context": "131K",
+    "output": "~32K",
+    "rateLimit": "Daily token allowance",
+    "source": "mnfst"
+  },
+  {
+    "id": "alibaba-cloud-model-studio-qwen3-coder-plus",
+    "providerSlug": "alibaba-cloud-model-studio",
+    "modelId": "qwen3-coder-plus",
+    "name": "Qwen3-Coder-Plus",
+    "modality": [
+      "text"
+    ],
+    "context": "256K",
+    "output": "8K",
+    "rateLimit": "Tiered by region",
+    "source": "mnfst"
+  },
+  {
+    "id": "alibaba-cloud-model-studio-qwen3-max",
+    "providerSlug": "alibaba-cloud-model-studio",
+    "modelId": "qwen3-max",
+    "name": "Qwen3-Max",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "32K",
+    "rateLimit": "Tiered by region",
+    "source": "mnfst"
+  },
+  {
+    "id": "alibaba-cloud-model-studio-qwen3-plus",
+    "providerSlug": "alibaba-cloud-model-studio",
+    "modelId": "qwen3-plus",
+    "name": "Qwen3-Plus",
+    "modality": [
+      "text"
+    ],
+    "context": "1M",
+    "output": "32K",
+    "rateLimit": "Tiered by region",
+    "source": "mnfst"
+  },
+  {
+    "id": "alibaba-cloud-model-studio-qwen3-vl-plus",
+    "providerSlug": "alibaba-cloud-model-studio",
+    "modelId": "qwen3-vl-plus",
+    "name": "Qwen3-VL-Plus",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "8K",
+    "rateLimit": "Tiered by region",
+    "source": "mnfst"
+  },
+  {
+    "id": "alibaba-cloud-model-studio-qwq-plus",
+    "providerSlug": "alibaba-cloud-model-studio",
+    "modelId": "qwq-plus",
+    "name": "QwQ-Plus",
+    "modality": [
+      "text"
+    ],
+    "context": "131K",
+    "output": "32K",
+    "rateLimit": "Tiered by region",
+    "source": "mnfst"
+  },
+  {
+    "id": "cerebras-gpt-oss-120b",
+    "providerSlug": "cerebras",
+    "modelId": "gpt-oss-120b",
+    "name": "gpt-oss-120b",
+    "modality": [
+      "text"
+    ],
+    "context": "128K (8K on free)",
+    "output": "8K",
+    "rateLimit": "30 RPM, 14,400 RPD, 1M TPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "cerebras-llama-33-70b",
+    "providerSlug": "cerebras",
+    "modelId": "llama-33-70b",
+    "name": "llama-3.3-70b",
+    "modality": [
+      "text"
+    ],
+    "context": "128K (8K on free)",
+    "output": "8K",
+    "rateLimit": "30 RPM, 14,400 RPD, 1M TPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "cerebras-llama-4-scout-17b-16e-instruct",
+    "providerSlug": "cerebras",
+    "modelId": "llama-4-scout-17b-16e-instruct",
+    "name": "llama-4-scout-17b-16e-instruct",
+    "modality": [
+      "text"
+    ],
+    "context": "128K (8K on free)",
+    "output": "8K",
+    "rateLimit": "30 RPM, 14,400 RPD, 1M TPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "cerebras-qwen-3-235b-a22b-instruct-2507",
+    "providerSlug": "cerebras",
+    "modelId": "qwen-3-235b-a22b-instruct-2507",
+    "name": "qwen-3-235b-a22b-instruct-2507",
+    "modality": [
+      "text"
+    ],
+    "context": "131K (8K on free)",
+    "output": "8K",
+    "rateLimit": "30 RPM, 14,400 RPD, 1M TPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "cerebras-qwen-3-32b",
+    "providerSlug": "cerebras",
+    "modelId": "qwen-3-32b",
+    "name": "qwen-3-32b",
+    "modality": [
+      "text"
+    ],
+    "context": "131K (8K on free)",
+    "output": "8K",
+    "rateLimit": "30 RPM, 14,400 RPD, 1M TPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "cerebras-zai-glm-47",
+    "providerSlug": "cerebras",
+    "modelId": "zai-glm-47",
+    "name": "zai-glm-4.7",
+    "modality": [
+      "text"
+    ],
+    "context": "128K (8K on free)",
+    "output": "8K",
+    "rateLimit": "10 RPM, 100 RPD, 1M TPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "cloudflare-workers-ai-42-more-models",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "42-more-models",
+    "name": "+ 42 more models",
+    "modality": [
+      "text",
+      "image",
+      "audio",
+      "embeddings"
+    ],
+    "context": "Varies",
+    "output": "Varies",
+    "rateLimit": "10K neurons/day (shared)",
+    "source": "mnfst"
+  },
+  {
+    "id": "cloudflare-workers-ai-cfaisingaporegemma-sea-lion-v4-27b-it",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "cfaisingaporegemma-sea-lion-v4-27b-it",
+    "name": "@cf/aisingapore/gemma-sea-lion-v4-27b-it",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-cfdeepseek-aideepseek-r1-distill-qwen-32b",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "cfdeepseek-aideepseek-r1-distill-qwen-32b",
+    "name": "`@cf/deepseek-ai/deepseek-r1-distill-qwen-32b`",
+    "modality": [
+      "text"
+    ],
+    "context": "32K",
+    "output": "Shared w/ context",
+    "rateLimit": "10K neurons/day (shared)",
+    "source": "mnfst"
+  },
+  {
+    "id": "cloudflare-workers-ai-cfgooglegemma-4-26b-a4b-it",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "cfgooglegemma-4-26b-a4b-it",
+    "name": "`@cf/google/gemma-4-26b-a4b-it`",
+    "modality": [
+      "text"
+    ],
+    "context": "256K",
+    "output": "Shared w/ context",
+    "rateLimit": "10K neurons/day (shared)",
+    "source": "mnfst"
+  },
+  {
+    "id": "cloudflare-workers-ai-cfibm-granitegranite-40-h-micro",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "cfibm-granitegranite-40-h-micro",
+    "name": "@cf/ibm-granite/granite-4.0-h-micro",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-cfmetallama-31-8b-instruct-fp8-fast",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "cfmetallama-31-8b-instruct-fp8-fast",
+    "name": "`@cf/meta/llama-3.1-8b-instruct-fp8-fast`",
+    "modality": [
+      "text"
+    ],
+    "context": "131K",
+    "output": "Shared w/ context",
+    "rateLimit": "10K neurons/day (shared)",
+    "source": "mnfst"
+  },
+  {
+    "id": "cloudflare-workers-ai-cfmetallama-32-11b-vision-instruct",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "cfmetallama-32-11b-vision-instruct",
+    "name": "`@cf/meta/llama-3.2-11b-vision-instruct`",
+    "modality": [
+      "text"
+    ],
+    "context": "131K",
+    "output": "Shared w/ context",
+    "rateLimit": "10K neurons/day (shared)",
+    "source": "mnfst"
+  },
+  {
+    "id": "cloudflare-workers-ai-cfmetallama-33-70b-instruct-fp8-fast",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "cfmetallama-33-70b-instruct-fp8-fast",
+    "name": "`@cf/meta/llama-3.3-70b-instruct-fp8-fast`",
+    "modality": [
+      "text"
+    ],
+    "context": "131K",
+    "output": "Shared w/ context",
+    "rateLimit": "10K neurons/day (shared)",
+    "source": "mnfst"
+  },
+  {
+    "id": "cloudflare-workers-ai-cfmetallama-4-scout-17b-16e-instruct",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "cfmetallama-4-scout-17b-16e-instruct",
+    "name": "`@cf/meta/llama-4-scout-17b-16e-instruct`",
+    "modality": [
+      "text"
+    ],
+    "context": "Up to 10M",
+    "output": "Shared w/ context",
+    "rateLimit": "10K neurons/day (shared)",
+    "source": "mnfst"
+  },
+  {
+    "id": "cloudflare-workers-ai-cfmistralaimistral-small-31-24b-instruct",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "cfmistralaimistral-small-31-24b-instruct",
+    "name": "`@cf/mistralai/mistral-small-3.1-24b-instruct`",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "Shared w/ context",
+    "rateLimit": "10K neurons/day (shared)",
+    "source": "mnfst"
+  },
+  {
+    "id": "cloudflare-workers-ai-cfmoonshotaikimi-k25",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "cfmoonshotaikimi-k25",
+    "name": "`@cf/moonshotai/kimi-k2.5`",
+    "modality": [
+      "text"
+    ],
+    "context": "256K",
+    "output": "Shared w/ context",
+    "rateLimit": "10K neurons/day (shared)",
+    "source": "mnfst"
+  },
+  {
+    "id": "cloudflare-workers-ai-cfmoonshotaikimi-k26",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "cfmoonshotaikimi-k26",
+    "name": "@cf/moonshotai/kimi-k2.6",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-cfnvidianemotron-3-120b-a12b",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "cfnvidianemotron-3-120b-a12b",
+    "name": "@cf/nvidia/nemotron-3-120b-a12b",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-cfopenaigpt-oss-120b",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "cfopenaigpt-oss-120b",
+    "name": "@cf/openai/gpt-oss-120b",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-cfopenaigpt-oss-20b",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "cfopenaigpt-oss-20b",
+    "name": "@cf/openai/gpt-oss-20b",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-cfqwenqwen3-30b-a3b-fp8",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "cfqwenqwen3-30b-a3b-fp8",
+    "name": "@cf/qwen/qwen3-30b-a3b-fp8",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-cfzai-orgglm-47-flash",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "cfzai-orgglm-47-flash",
+    "name": "@cf/zai-org/glm-4.7-flash",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-deepseek-r1-distill-qwen-32b",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "deepseek-r1-distill-qwen-32b",
+    "name": "DeepSeek R1 Distill Qwen 32B",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-gemma-2b-instruct-lora",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "gemma-2b-instruct-lora",
+    "name": "Gemma 2B Instruct (LoRA)",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-gemma-3-12b-instruct",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "gemma-3-12b-instruct",
+    "name": "Gemma 3 12B Instruct",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-gemma-7b-instruct",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "gemma-7b-instruct",
+    "name": "Gemma 7B Instruct",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-gemma-7b-instruct-lora",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "gemma-7b-instruct-lora",
+    "name": "Gemma 7B Instruct (LoRA)",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-hermes-2-pro-mistral-7b",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "hermes-2-pro-mistral-7b",
+    "name": "Hermes 2 Pro Mistral 7B",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-llama-2-7b-chat-fp16",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "llama-2-7b-chat-fp16",
+    "name": "Llama 2 7B Chat (FP16)",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-llama-2-7b-chat-int8",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "llama-2-7b-chat-int8",
+    "name": "Llama 2 7B Chat (INT8)",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-llama-2-7b-chat-lora",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "llama-2-7b-chat-lora",
+    "name": "Llama 2 7B Chat (LoRA)",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-llama-3-8b-instruct",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "llama-3-8b-instruct",
+    "name": "Llama 3 8B Instruct",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-llama-3-8b-instruct-awq",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "llama-3-8b-instruct-awq",
+    "name": "Llama 3 8B Instruct (AWQ)",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-llama-31-8b-instruct-awq",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "llama-31-8b-instruct-awq",
+    "name": "Llama 3.1 8B Instruct (AWQ)",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-llama-31-8b-instruct-fp8",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "llama-31-8b-instruct-fp8",
+    "name": "Llama 3.1 8B Instruct (FP8)",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-llama-32-11b-vision-instruct",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "llama-32-11b-vision-instruct",
+    "name": "Llama 3.2 11B Vision Instruct",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-llama-32-1b-instruct",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "llama-32-1b-instruct",
+    "name": "Llama 3.2 1B Instruct",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-llama-32-3b-instruct",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "llama-32-3b-instruct",
+    "name": "Llama 3.2 3B Instruct",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-llama-33-70b-instruct-fp8",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "llama-33-70b-instruct-fp8",
+    "name": "Llama 3.3 70B Instruct (FP8)",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-llama-4-scout-instruct",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "llama-4-scout-instruct",
+    "name": "Llama 4 Scout Instruct",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-llama-guard-3-8b",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "llama-guard-3-8b",
+    "name": "Llama Guard 3 8B",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-mistral-7b-instruct-v01",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "mistral-7b-instruct-v01",
+    "name": "Mistral 7B Instruct v0.1",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-mistral-7b-instruct-v02",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "mistral-7b-instruct-v02",
+    "name": "Mistral 7B Instruct v0.2",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-mistral-7b-instruct-v02-lora",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "mistral-7b-instruct-v02-lora",
+    "name": "Mistral 7B Instruct v0.2 (LoRA)",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-mistral-small-31-24b-instruct",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "mistral-small-31-24b-instruct",
+    "name": "Mistral Small 3.1 24B Instruct",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-phi-2",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "phi-2",
+    "name": "Phi-2",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-qwen-25-coder-32b-instruct",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "qwen-25-coder-32b-instruct",
+    "name": "Qwen 2.5 Coder 32B Instruct",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-qwen-qwq-32b",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "qwen-qwq-32b",
+    "name": "Qwen QwQ 32B",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cloudflare-workers-ai-sqlcoder-7b-2",
+    "providerSlug": "cloudflare-workers-ai",
+    "modelId": "sqlcoder-7b-2",
+    "name": "SQLCoder 7B 2",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cohere-c4ai-aya-expanse-32b",
+    "providerSlug": "cohere",
+    "modelId": "c4ai-aya-expanse-32b",
+    "name": "c4ai-aya-expanse-32b",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cohere-c4ai-aya-vision-32b",
+    "providerSlug": "cohere",
+    "modelId": "c4ai-aya-vision-32b",
+    "name": "c4ai-aya-vision-32b",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cohere-command-a-03-2025",
+    "providerSlug": "cohere",
+    "modelId": "command-a-03-2025",
+    "name": "command-a-03-2025",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cohere-command-a-111b",
+    "providerSlug": "cohere",
+    "modelId": "command-a-111b",
+    "name": "Command A (111B)",
+    "modality": [
+      "text"
+    ],
+    "context": "256K",
+    "output": "4K",
+    "rateLimit": "20 RPM",
+    "source": "mnfst"
+  },
+  {
+    "id": "cohere-command-a-plus-05-2026",
+    "providerSlug": "cohere",
+    "modelId": "command-a-plus-05-2026",
+    "name": "command-a-plus-05-2026",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cohere-command-a-reasoning-08-2025",
+    "providerSlug": "cohere",
+    "modelId": "command-a-reasoning-08-2025",
+    "name": "command-a-reasoning-08-2025",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cohere-command-a-translate-08-2025",
+    "providerSlug": "cohere",
+    "modelId": "command-a-translate-08-2025",
+    "name": "command-a-translate-08-2025",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cohere-command-a-vision-07-2025",
+    "providerSlug": "cohere",
+    "modelId": "command-a-vision-07-2025",
+    "name": "command-a-vision-07-2025",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cohere-command-r",
+    "providerSlug": "cohere",
+    "modelId": "command-r",
+    "name": "Command R+",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "4K",
+    "rateLimit": "20 RPM",
+    "source": "mnfst"
+  },
+  {
+    "id": "cohere-command-r-08-2024",
+    "providerSlug": "cohere",
+    "modelId": "command-r-08-2024",
+    "name": "command-r-08-2024",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cohere-command-r-plus-08-2024",
+    "providerSlug": "cohere",
+    "modelId": "command-r-plus-08-2024",
+    "name": "command-r-plus-08-2024",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cohere-command-r7b",
+    "providerSlug": "cohere",
+    "modelId": "command-r7b",
+    "name": "Command R7B",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "4K",
+    "rateLimit": "20 RPM",
+    "source": "mnfst"
+  },
+  {
+    "id": "cohere-command-r7b-12-2024",
+    "providerSlug": "cohere",
+    "modelId": "command-r7b-12-2024",
+    "name": "command-r7b-12-2024",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cohere-command-r7b-arabic-02-2025",
+    "providerSlug": "cohere",
+    "modelId": "command-r7b-arabic-02-2025",
+    "name": "command-r7b-arabic-02-2025",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "cohere-embed-4",
+    "providerSlug": "cohere",
+    "modelId": "embed-4",
+    "name": "Embed 4",
+    "modality": [
+      "embeddings"
+    ],
+    "rateLimit": "2,000 inputs/min",
+    "source": "mnfst"
+  },
+  {
+    "id": "cohere-rerank-35",
+    "providerSlug": "cohere",
+    "modelId": "rerank-35",
+    "name": "Rerank 3.5",
+    "modality": [
+      "reranking"
+    ],
+    "rateLimit": "10 RPM",
+    "source": "mnfst"
+  },
+  {
+    "id": "deepseek-deepseek-chat-v32",
+    "providerSlug": "deepseek",
+    "modelId": "deepseek-chat-v32",
+    "name": "deepseek-chat (V3.2)",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "8K",
+    "rateLimit": "Dynamic",
+    "source": "mnfst"
+  },
+  {
+    "id": "deepseek-deepseek-reasoner-r1",
+    "providerSlug": "deepseek",
+    "modelId": "deepseek-reasoner-r1",
+    "name": "deepseek-reasoner (R1)",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "8K",
+    "rateLimit": "Dynamic",
+    "source": "mnfst"
+  },
+  {
+    "id": "github-models-35-more-models",
+    "providerSlug": "github-models",
+    "modelId": "35-more-models",
+    "name": "+ 35 more models",
+    "modality": [
+      "text",
+      "image"
+    ],
+    "context": "Varies",
+    "output": "Varies",
+    "rateLimit": "Varies by tier",
+    "source": "mnfst"
+  },
+  {
+    "id": "github-models-ai21-jamba-15-large",
+    "providerSlug": "github-models",
+    "modelId": "ai21-jamba-15-large",
+    "name": "AI21 Jamba 1.5 Large",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-codestral-2501",
+    "providerSlug": "github-models",
+    "modelId": "codestral-2501",
+    "name": "Codestral 25.01",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-cohere-command-a",
+    "providerSlug": "github-models",
+    "modelId": "cohere-command-a",
+    "name": "Cohere Command A",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-cohere-command-r-08-2024",
+    "providerSlug": "github-models",
+    "modelId": "cohere-command-r-08-2024",
+    "name": "Cohere Command R 08-2024",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-deepseek-r1",
+    "providerSlug": "github-models",
+    "modelId": "deepseek-r1",
+    "name": "DeepSeek-R1",
+    "modality": [
+      "text"
+    ],
+    "context": "64K",
+    "output": "8K",
+    "rateLimit": "15 RPM, 150 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "github-models-deepseek-r1-0528",
+    "providerSlug": "github-models",
+    "modelId": "deepseek-r1-0528",
+    "name": "DeepSeek-R1-0528",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-deepseek-v3-0324",
+    "providerSlug": "github-models",
+    "modelId": "deepseek-v3-0324",
+    "name": "DeepSeek-V3-0324",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-gpt-41",
+    "providerSlug": "github-models",
+    "modelId": "gpt-41",
+    "name": "gpt-4.1",
+    "modality": [
+      "text"
+    ],
+    "context": "1M",
+    "output": "32K",
+    "rateLimit": "10 RPM, 50 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "github-models-gpt-41-mini",
+    "providerSlug": "github-models",
+    "modelId": "gpt-41-mini",
+    "name": "gpt-4.1-mini",
+    "modality": [
+      "text"
+    ],
+    "context": "1M",
+    "output": "32K",
+    "rateLimit": "15 RPM, 150 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "github-models-gpt-4o",
+    "providerSlug": "github-models",
+    "modelId": "gpt-4o",
+    "name": "gpt-4o",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "16K",
+    "rateLimit": "10 RPM, 50 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "github-models-gpt-5",
+    "providerSlug": "github-models",
+    "modelId": "gpt-5",
+    "name": "gpt-5",
+    "modality": [
+      "text"
+    ],
+    "context": "200K",
+    "output": "32K",
+    "rateLimit": "10 RPM, 50 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "github-models-grok-3",
+    "providerSlug": "github-models",
+    "modelId": "grok-3",
+    "name": "Grok 3",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-grok-3-mini",
+    "providerSlug": "github-models",
+    "modelId": "grok-3-mini",
+    "name": "Grok 3 Mini",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-llama-32-11b-vision-instruct",
+    "providerSlug": "github-models",
+    "modelId": "llama-32-11b-vision-instruct",
+    "name": "Llama-3.2-11B-Vision-Instruct",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-llama-32-90b-vision-instruct",
+    "providerSlug": "github-models",
+    "modelId": "llama-32-90b-vision-instruct",
+    "name": "Llama-3.2-90B-Vision-Instruct",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-llama-33-70b-instruct",
+    "providerSlug": "github-models",
+    "modelId": "llama-33-70b-instruct",
+    "name": "Llama-3.3-70B-Instruct",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-llama-4-maverick-17b-128e",
+    "providerSlug": "github-models",
+    "modelId": "llama-4-maverick-17b-128e",
+    "name": "Llama-4-Maverick-17B-128E",
+    "modality": [
+      "text"
+    ],
+    "context": "256K",
+    "output": "~4K",
+    "rateLimit": "10 RPM, 50 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "github-models-llama-4-maverick-17b-128e-instruct-fp8",
+    "providerSlug": "github-models",
+    "modelId": "llama-4-maverick-17b-128e-instruct-fp8",
+    "name": "Llama 4 Maverick 17B 128E Instruct FP8",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-llama-4-scout-17b-16e",
+    "providerSlug": "github-models",
+    "modelId": "llama-4-scout-17b-16e",
+    "name": "Llama-4-Scout-17B-16E",
+    "modality": [
+      "text"
+    ],
+    "context": "512K",
+    "output": "~4K",
+    "rateLimit": "15 RPM, 150 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "github-models-llama-4-scout-17b-16e-instruct",
+    "providerSlug": "github-models",
+    "modelId": "llama-4-scout-17b-16e-instruct",
+    "name": "Llama 4 Scout 17B 16E Instruct",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-mai-ds-r1",
+    "providerSlug": "github-models",
+    "modelId": "mai-ds-r1",
+    "name": "MAI-DS-R1",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-meta-llama-31-405b-instruct",
+    "providerSlug": "github-models",
+    "modelId": "meta-llama-31-405b-instruct",
+    "name": "Meta-Llama-3.1-405B-Instruct",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-meta-llama-31-8b-instruct",
+    "providerSlug": "github-models",
+    "modelId": "meta-llama-31-8b-instruct",
+    "name": "Meta-Llama-3.1-8B-Instruct",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-meta-llama-33-70b",
+    "providerSlug": "github-models",
+    "modelId": "meta-llama-33-70b",
+    "name": "Meta-Llama-3.3-70B",
+    "modality": [
+      "text"
+    ],
+    "context": "131K",
+    "output": "~4K",
+    "rateLimit": "15 RPM, 150 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "github-models-ministral-3b",
+    "providerSlug": "github-models",
+    "modelId": "ministral-3b",
+    "name": "Ministral 3B",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-mistral-medium-3-2505",
+    "providerSlug": "github-models",
+    "modelId": "mistral-medium-3-2505",
+    "name": "Mistral Medium 3 (25.05)",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-mistral-small-31",
+    "providerSlug": "github-models",
+    "modelId": "mistral-small-31",
+    "name": "Mistral-Small-3.1",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "~4K",
+    "rateLimit": "15 RPM, 150 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "github-models-o4-mini",
+    "providerSlug": "github-models",
+    "modelId": "o4-mini",
+    "name": "o4-mini",
+    "modality": [
+      "text"
+    ],
+    "context": "200K",
+    "output": "100K",
+    "rateLimit": "10 RPM, 50 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "github-models-openai-gpt-41",
+    "providerSlug": "github-models",
+    "modelId": "openai-gpt-41",
+    "name": "OpenAI GPT-4.1",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-openai-gpt-41-mini",
+    "providerSlug": "github-models",
+    "modelId": "openai-gpt-41-mini",
+    "name": "OpenAI GPT-4.1-mini",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-openai-gpt-41-nano",
+    "providerSlug": "github-models",
+    "modelId": "openai-gpt-41-nano",
+    "name": "OpenAI GPT-4.1-nano",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-openai-gpt-4o",
+    "providerSlug": "github-models",
+    "modelId": "openai-gpt-4o",
+    "name": "OpenAI GPT-4o",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-openai-gpt-4o-mini",
+    "providerSlug": "github-models",
+    "modelId": "openai-gpt-4o-mini",
+    "name": "OpenAI GPT-4o mini",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-openai-gpt-5",
+    "providerSlug": "github-models",
+    "modelId": "openai-gpt-5",
+    "name": "OpenAI gpt-5",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-openai-gpt-5-chat-preview",
+    "providerSlug": "github-models",
+    "modelId": "openai-gpt-5-chat-preview",
+    "name": "OpenAI gpt-5-chat (preview)",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-openai-gpt-5-mini",
+    "providerSlug": "github-models",
+    "modelId": "openai-gpt-5-mini",
+    "name": "OpenAI gpt-5-mini",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-openai-gpt-5-nano",
+    "providerSlug": "github-models",
+    "modelId": "openai-gpt-5-nano",
+    "name": "OpenAI gpt-5-nano",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-openai-o1",
+    "providerSlug": "github-models",
+    "modelId": "openai-o1",
+    "name": "OpenAI o1",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-openai-o1-mini",
+    "providerSlug": "github-models",
+    "modelId": "openai-o1-mini",
+    "name": "OpenAI o1-mini",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-openai-o1-preview",
+    "providerSlug": "github-models",
+    "modelId": "openai-o1-preview",
+    "name": "OpenAI o1-preview",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-openai-o3",
+    "providerSlug": "github-models",
+    "modelId": "openai-o3",
+    "name": "OpenAI o3",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-openai-o3-mini",
+    "providerSlug": "github-models",
+    "modelId": "openai-o3-mini",
+    "name": "OpenAI o3-mini",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-openai-o4-mini",
+    "providerSlug": "github-models",
+    "modelId": "openai-o4-mini",
+    "name": "OpenAI o4-mini",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-openai-text-embedding-3-large",
+    "providerSlug": "github-models",
+    "modelId": "openai-text-embedding-3-large",
+    "name": "OpenAI Text Embedding 3 (large)",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-openai-text-embedding-3-small",
+    "providerSlug": "github-models",
+    "modelId": "openai-text-embedding-3-small",
+    "name": "OpenAI Text Embedding 3 (small)",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-phi-4",
+    "providerSlug": "github-models",
+    "modelId": "phi-4",
+    "name": "Phi-4",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-phi-4-mini-instruct",
+    "providerSlug": "github-models",
+    "modelId": "phi-4-mini-instruct",
+    "name": "Phi-4-mini-instruct",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-phi-4-mini-reasoning",
+    "providerSlug": "github-models",
+    "modelId": "phi-4-mini-reasoning",
+    "name": "Phi-4-mini-reasoning",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-phi-4-multimodal-instruct",
+    "providerSlug": "github-models",
+    "modelId": "phi-4-multimodal-instruct",
+    "name": "Phi-4-multimodal-instruct",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "github-models-phi-4-reasoning",
+    "providerSlug": "github-models",
+    "modelId": "phi-4-reasoning",
+    "name": "Phi-4-reasoning",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "google-gemini-gemini-25-flash",
+    "providerSlug": "google-gemini",
+    "modelId": "gemini-25-flash",
+    "name": "Gemini 2.5 Flash",
+    "modality": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "context": "1M",
+    "output": "65K",
+    "rateLimit": "10 RPM, 250 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "google-gemini-gemini-25-flash-lite",
+    "providerSlug": "google-gemini",
+    "modelId": "gemini-25-flash-lite",
+    "name": "Gemini 2.5 Flash-Lite",
+    "modality": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "context": "1M",
+    "output": "65K",
+    "rateLimit": "15 RPM, 1,000 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "google-gemini-gemini-25-pro",
+    "providerSlug": "google-gemini",
+    "modelId": "gemini-25-pro",
+    "name": "Gemini 2.5 Pro",
+    "modality": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "context": "2M",
+    "output": "65K",
+    "rateLimit": "5 RPM, 100 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "google-gemini-gemini-3-flash-preview",
+    "providerSlug": "google-gemini",
+    "modelId": "gemini-3-flash-preview",
+    "name": "Gemini 3 Flash (Preview)",
+    "modality": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "context": "1M",
+    "output": "65K",
+    "rateLimit": "Preview limits",
+    "source": "mnfst"
+  },
+  {
+    "id": "groq-deepseek-r1-distill-70b",
+    "providerSlug": "groq",
+    "modelId": "deepseek-r1-distill-70b",
+    "name": "deepseek-r1-distill-70b",
+    "modality": [
+      "text"
+    ],
+    "context": "131K",
+    "output": "8K",
+    "rateLimit": "30 RPM, 14,400 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "groq-gpt-oss-120b",
+    "providerSlug": "groq",
+    "modelId": "gpt-oss-120b",
+    "name": "gpt-oss-120b",
+    "modality": [
+      "text"
+    ],
+    "context": "131K",
+    "output": "32K",
+    "rateLimit": "30 RPM, 14,400 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "groq-kimi-k2-instruct",
+    "providerSlug": "groq",
+    "modelId": "kimi-k2-instruct",
+    "name": "kimi-k2-instruct",
+    "modality": [
+      "text"
+    ],
+    "context": "262K",
+    "output": "262K",
+    "rateLimit": "30 RPM, 14,400 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "groq-llama-31-8b-instant",
+    "providerSlug": "groq",
+    "modelId": "llama-31-8b-instant",
+    "name": "llama-3.1-8b-instant",
+    "modality": [
+      "text"
+    ],
+    "context": "131K",
+    "output": "131K",
+    "rateLimit": "30 RPM, 14,400 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "groq-llama-33-70b-versatile",
+    "providerSlug": "groq",
+    "modelId": "llama-33-70b-versatile",
+    "name": "llama-3.3-70b-versatile",
+    "modality": [
+      "text"
+    ],
+    "context": "131K",
+    "output": "32K",
+    "rateLimit": "30 RPM, 14,400 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "groq-llama-4-maverick-17b-128e-instruct",
+    "providerSlug": "groq",
+    "modelId": "llama-4-maverick-17b-128e-instruct",
+    "name": "llama-4-maverick-17b-128e-instruct",
+    "modality": [
+      "text"
+    ],
+    "context": "131K",
+    "output": "8K",
+    "rateLimit": "15 RPM, 500 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "groq-llama-4-scout-17b-16e-instruct",
+    "providerSlug": "groq",
+    "modelId": "llama-4-scout-17b-16e-instruct",
+    "name": "llama-4-scout-17b-16e-instruct",
+    "modality": [
+      "text"
+    ],
+    "context": "131K",
+    "output": "8K",
+    "rateLimit": "30 RPM, 14,400 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "groq-qwen3-32b",
+    "providerSlug": "groq",
+    "modelId": "qwen3-32b",
+    "name": "qwen3-32b",
+    "modality": [
+      "text"
+    ],
+    "context": "131K",
+    "output": "131K",
+    "rateLimit": "30 RPM, 14,400 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "groq-whisper-large-v3",
+    "providerSlug": "groq",
+    "modelId": "whisper-large-v3",
+    "name": "whisper-large-v3",
+    "modality": [
+      "audio",
+      "text"
+    ],
+    "rateLimit": "20 RPM, 2,000 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "groq-whisper-large-v3-turbo",
+    "providerSlug": "groq",
+    "modelId": "whisper-large-v3-turbo",
+    "name": "whisper-large-v3-turbo",
+    "modality": [
+      "audio",
+      "text"
+    ],
+    "rateLimit": "20 RPM, 2,000 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "hugging-face-meta-llama-31-8b-instruct",
+    "providerSlug": "hugging-face",
+    "modelId": "meta-llama-31-8b-instruct",
+    "name": "Meta-Llama-3.1-8B-Instruct",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "~4K",
+    "rateLimit": "Credit-metered",
+    "source": "mnfst"
+  },
+  {
+    "id": "hugging-face-mistral-7b-instruct-v03",
+    "providerSlug": "hugging-face",
+    "modelId": "mistral-7b-instruct-v03",
+    "name": "Mistral-7B-Instruct-v0.3",
+    "modality": [
+      "text"
+    ],
+    "context": "32K",
+    "output": "~4K",
+    "rateLimit": "Credit-metered",
+    "source": "mnfst"
+  },
+  {
+    "id": "hugging-face-mixtral-8x7b-instruct-v01",
+    "providerSlug": "hugging-face",
+    "modelId": "mixtral-8x7b-instruct-v01",
+    "name": "Mixtral-8x7B-Instruct-v0.1",
+    "modality": [
+      "text"
+    ],
+    "context": "32K",
+    "output": "~4K",
+    "rateLimit": "Credit-metered",
+    "source": "mnfst"
+  },
+  {
+    "id": "hugging-face-phi-35-mini-instruct",
+    "providerSlug": "hugging-face",
+    "modelId": "phi-35-mini-instruct",
+    "name": "Phi-3.5-mini-instruct",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "~4K",
+    "rateLimit": "Credit-metered",
+    "source": "mnfst"
+  },
+  {
+    "id": "hugging-face-qwen25-7b-instruct",
+    "providerSlug": "hugging-face",
+    "modelId": "qwen25-7b-instruct",
+    "name": "Qwen2.5-7B-Instruct",
+    "modality": [
+      "text"
+    ],
+    "context": "131K",
+    "output": "~4K",
+    "rateLimit": "Credit-metered",
+    "source": "mnfst"
+  },
+  {
+    "id": "hugging-face-thousands-of-community-models",
+    "providerSlug": "hugging-face",
+    "modelId": "thousands-of-community-models",
+    "name": "+ thousands of community models",
+    "modality": [
+      "text",
+      "image",
+      "audio",
+      "embeddings"
+    ],
+    "context": "Varies",
+    "output": "Varies",
+    "rateLimit": "100K credits/month free",
+    "source": "mnfst"
+  },
+  {
+    "id": "huggingface-inference-providers-various-open-models-across-supported-providers",
+    "providerSlug": "huggingface-inference-providers",
+    "modelId": "various-open-models-across-supported-providers",
+    "name": "Various open models across supported providers",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "hyperbolic-deepseek-aideepseek-r1-0528",
+    "providerSlug": "hyperbolic",
+    "modelId": "deepseek-aideepseek-r1-0528",
+    "name": "deepseek-ai/deepseek-r1-0528",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "hyperbolic-deepseek-v3-0324",
+    "providerSlug": "hyperbolic",
+    "modelId": "deepseek-v3-0324",
+    "name": "DeepSeek V3 0324",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "hyperbolic-llama-33-70b-instruct",
+    "providerSlug": "hyperbolic",
+    "modelId": "llama-33-70b-instruct",
+    "name": "Llama 3.3 70B Instruct",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "hyperbolic-qwenqwen3-coder-480b-a35b-instruct",
+    "providerSlug": "hyperbolic",
+    "modelId": "qwenqwen3-coder-480b-a35b-instruct",
+    "name": "qwen/qwen3-coder-480b-a35b-instruct",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "kilo-code-arcee-aitrinity-large-thinkingfree",
+    "providerSlug": "kilo-code",
+    "modelId": "arcee-aitrinity-large-thinkingfree",
+    "name": "`arcee-ai/trinity-large-thinking:free`",
+    "modality": [
+      "text"
+    ],
+    "rateLimit": "~200 req/hr",
+    "source": "mnfst"
+  },
+  {
+    "id": "kilo-code-bytedance-seeddola-seed-20-profree",
+    "providerSlug": "kilo-code",
+    "modelId": "bytedance-seeddola-seed-20-profree",
+    "name": "`bytedance-seed/dola-seed-2.0-pro:free`",
+    "modality": [
+      "text"
+    ],
+    "rateLimit": "~200 req/hr",
+    "source": "mnfst"
+  },
+  {
+    "id": "kilo-code-minimaxminimax-m25free",
+    "providerSlug": "kilo-code",
+    "modelId": "minimaxminimax-m25free",
+    "name": "`minimax/minimax-m2.5:free`",
+    "modality": [
+      "text"
+    ],
+    "context": "196K",
+    "output": "8K",
+    "rateLimit": "~200 req/hr",
+    "source": "mnfst"
+  },
+  {
+    "id": "kilo-code-nvidianemotron-3-super-120b-a12bfree",
+    "providerSlug": "kilo-code",
+    "modelId": "nvidianemotron-3-super-120b-a12bfree",
+    "name": "`nvidia/nemotron-3-super-120b-a12b:free`",
+    "modality": [
+      "text"
+    ],
+    "context": "262K",
+    "output": "32K",
+    "rateLimit": "~200 req/hr",
+    "source": "mnfst"
+  },
+  {
+    "id": "kilo-code-openrouterfree",
+    "providerSlug": "kilo-code",
+    "modelId": "openrouterfree",
+    "name": "`openrouter/free`",
+    "modality": [
+      "text"
+    ],
+    "context": "Varies",
+    "output": "Varies",
+    "rateLimit": "~200 req/hr",
+    "source": "mnfst"
+  },
+  {
+    "id": "kilo-code-x-aigrok-code-fast-1free",
+    "providerSlug": "kilo-code",
+    "modelId": "x-aigrok-code-fast-1free",
+    "name": "`x-ai/grok-code-fast-1:free`",
+    "modality": [
+      "text"
+    ],
+    "context": "256K",
+    "rateLimit": "~200 req/hr",
+    "source": "mnfst"
+  },
+  {
+    "id": "llm7io-24-more-models",
+    "providerSlug": "llm7io",
+    "modelId": "24-more-models",
+    "name": "+ ~24 more models",
+    "modality": [
+      "text"
+    ],
+    "context": "Varies",
+    "output": "Varies",
+    "rateLimit": "30 RPM (120 with token)",
+    "source": "mnfst"
+  },
+  {
+    "id": "llm7io-deepseek-r1-0528",
+    "providerSlug": "llm7io",
+    "modelId": "deepseek-r1-0528",
+    "name": "deepseek-r1-0528",
+    "modality": [
+      "text"
+    ],
+    "rateLimit": "30 RPM (120 with token)",
+    "source": "mnfst"
+  },
+  {
+    "id": "llm7io-deepseek-v3-0324",
+    "providerSlug": "llm7io",
+    "modelId": "deepseek-v3-0324",
+    "name": "deepseek-v3-0324",
+    "modality": [
+      "text"
+    ],
+    "rateLimit": "30 RPM (120 with token)",
+    "source": "mnfst"
+  },
+  {
+    "id": "llm7io-gemini-25-flash-lite",
+    "providerSlug": "llm7io",
+    "modelId": "gemini-25-flash-lite",
+    "name": "gemini-2.5-flash-lite",
+    "modality": [
+      "text"
+    ],
+    "rateLimit": "30 RPM (120 with token)",
+    "source": "mnfst"
+  },
+  {
+    "id": "llm7io-gpt-4o-mini",
+    "providerSlug": "llm7io",
+    "modelId": "gpt-4o-mini",
+    "name": "gpt-4o-mini",
+    "modality": [
+      "text"
+    ],
+    "rateLimit": "30 RPM (120 with token)",
+    "source": "mnfst"
+  },
+  {
+    "id": "llm7io-mistral-small-31-24b",
+    "providerSlug": "llm7io",
+    "modelId": "mistral-small-31-24b",
+    "name": "mistral-small-3.1-24b",
+    "modality": [
+      "text"
+    ],
+    "context": "32K",
+    "rateLimit": "30 RPM (120 with token)",
+    "source": "mnfst"
+  },
+  {
+    "id": "llm7io-qwen25-coder-32b",
+    "providerSlug": "llm7io",
+    "modelId": "qwen25-coder-32b",
+    "name": "qwen2.5-coder-32b",
+    "modality": [
+      "text"
+    ],
+    "rateLimit": "30 RPM (120 with token)",
+    "source": "mnfst"
+  },
+  {
+    "id": "mistral-ai-codestral",
+    "providerSlug": "mistral-ai",
+    "modelId": "codestral",
+    "name": "Codestral",
+    "modality": [
+      "code"
+    ],
+    "context": "256K",
+    "output": "256K",
+    "rateLimit": "~1 RPS, 500K TPM",
+    "source": "mnfst"
+  },
+  {
+    "id": "mistral-ai-mistral-large-3",
+    "providerSlug": "mistral-ai",
+    "modelId": "mistral-large-3",
+    "name": "Mistral Large 3",
+    "modality": [
+      "text"
+    ],
+    "context": "256K",
+    "output": "256K",
+    "rateLimit": "~1 RPS, 500K TPM",
+    "source": "mnfst"
+  },
+  {
+    "id": "mistral-ai-mistral-medium-3",
+    "providerSlug": "mistral-ai",
+    "modelId": "mistral-medium-3",
+    "name": "Mistral Medium 3",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "128K",
+    "rateLimit": "~1 RPS, 500K TPM",
+    "source": "mnfst"
+  },
+  {
+    "id": "mistral-ai-mistral-nemo-12b",
+    "providerSlug": "mistral-ai",
+    "modelId": "mistral-nemo-12b",
+    "name": "Mistral Nemo (12B)",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "128K",
+    "rateLimit": "~1 RPS, 500K TPM",
+    "source": "mnfst"
+  },
+  {
+    "id": "mistral-ai-mistral-small-4",
+    "providerSlug": "mistral-ai",
+    "modelId": "mistral-small-4",
+    "name": "Mistral Small 4",
+    "modality": [
+      "text",
+      "image",
+      "code"
+    ],
+    "context": "256K",
+    "output": "256K",
+    "rateLimit": "~1 RPS, 500K TPM",
+    "source": "mnfst"
+  },
+  {
+    "id": "mistral-ai-pixtral-large",
+    "providerSlug": "mistral-ai",
+    "modelId": "pixtral-large",
+    "name": "Pixtral Large",
+    "modality": [
+      "text",
+      "image"
+    ],
+    "context": "128K",
+    "output": "128K",
+    "rateLimit": "~1 RPS, 500K TPM",
+    "source": "mnfst"
+  },
+  {
+    "id": "mistral-codestral-codestral",
+    "providerSlug": "mistral-codestral",
+    "modelId": "codestral",
+    "name": "Codestral",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "mistral-la-plateforme-open-and-proprietary-mistral-models",
+    "providerSlug": "mistral-la-plateforme",
+    "modelId": "open-and-proprietary-mistral-models",
+    "name": "Open and Proprietary Mistral models",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "modelscope-api-inference-enabled-models",
+    "providerSlug": "modelscope",
+    "modelId": "api-inference-enabled-models",
+    "name": "+ API-Inference-enabled models",
+    "modality": [
+      "text"
+    ],
+    "context": "Varies",
+    "output": "Varies",
+    "rateLimit": "Dynamic quotas + dynamic concurrency",
+    "source": "mnfst"
+  },
+  {
+    "id": "modelscope-qwenqwen-image",
+    "providerSlug": "modelscope",
+    "modelId": "qwenqwen-image",
+    "name": "`Qwen/Qwen-Image`",
+    "modality": [
+      "image"
+    ],
+    "rateLimit": "2,000 RPD total; model/AIGC-specific caps",
+    "source": "mnfst"
+  },
+  {
+    "id": "modelscope-qwenqwen35-27b",
+    "providerSlug": "modelscope",
+    "modelId": "qwenqwen35-27b",
+    "name": "`Qwen/Qwen3.5-27B`",
+    "modality": [
+      "text"
+    ],
+    "rateLimit": "2,000 RPD total; <=500 RPD/model (dynamic)",
+    "source": "mnfst"
+  },
+  {
+    "id": "modelscope-qwenqwen35-35b-a3b",
+    "providerSlug": "modelscope",
+    "modelId": "qwenqwen35-35b-a3b",
+    "name": "`Qwen/Qwen3.5-35B-A3B`",
+    "modality": [
+      "text"
+    ],
+    "rateLimit": "2,000 RPD total; <=500 RPD/model (dynamic)",
+    "source": "mnfst"
+  },
+  {
+    "id": "nebius-55-more-open-source-models",
+    "providerSlug": "nebius",
+    "modelId": "55-more-open-source-models",
+    "name": "+ 55 more open-source models",
+    "modality": [
+      "text",
+      "code",
+      "embeddings"
+    ],
+    "context": "Varies",
+    "output": "Varies",
+    "rateLimit": "Tier-based",
+    "source": "mnfst"
+  },
+  {
+    "id": "nebius-deepseek-r1",
+    "providerSlug": "nebius",
+    "modelId": "deepseek-r1",
+    "name": "DeepSeek-R1",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "~32K",
+    "rateLimit": "Tier-based",
+    "source": "mnfst"
+  },
+  {
+    "id": "nebius-deepseek-v3-0324",
+    "providerSlug": "nebius",
+    "modelId": "deepseek-v3-0324",
+    "name": "DeepSeek-V3-0324",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "~8K",
+    "rateLimit": "Tier-based",
+    "source": "mnfst"
+  },
+  {
+    "id": "nebius-gpt-oss-120b",
+    "providerSlug": "nebius",
+    "modelId": "gpt-oss-120b",
+    "name": "gpt-oss-120b",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "~32K",
+    "rateLimit": "Tier-based",
+    "source": "mnfst"
+  },
+  {
+    "id": "nebius-meta-llama-33-70b-instruct",
+    "providerSlug": "nebius",
+    "modelId": "meta-llama-33-70b-instruct",
+    "name": "Meta-Llama-3.3-70B-Instruct",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "~8K",
+    "rateLimit": "Tier-based",
+    "source": "mnfst"
+  },
+  {
+    "id": "nebius-qwen3-235b-a22b",
+    "providerSlug": "nebius",
+    "modelId": "qwen3-235b-a22b",
+    "name": "Qwen3-235B-A22B",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "~32K",
+    "rateLimit": "Tier-based",
+    "source": "mnfst"
+  },
+  {
+    "id": "nscale-deepseek-r1-distill-llama-70b",
+    "providerSlug": "nscale",
+    "modelId": "deepseek-r1-distill-llama-70b",
+    "name": "DeepSeek-R1-Distill-Llama-70B",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "~32K",
+    "rateLimit": "Fair-use",
+    "source": "mnfst"
+  },
+  {
+    "id": "nscale-gpt-oss-120b",
+    "providerSlug": "nscale",
+    "modelId": "gpt-oss-120b",
+    "name": "gpt-oss-120b",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "~32K",
+    "rateLimit": "Fair-use",
+    "source": "mnfst"
+  },
+  {
+    "id": "nscale-llama-33-70b-instruct",
+    "providerSlug": "nscale",
+    "modelId": "llama-33-70b-instruct",
+    "name": "Llama-3.3-70B-Instruct",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "~8K",
+    "rateLimit": "Fair-use",
+    "source": "mnfst"
+  },
+  {
+    "id": "nscale-qwen3-32b",
+    "providerSlug": "nscale",
+    "modelId": "qwen3-32b",
+    "name": "Qwen3-32B",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "~32K",
+    "rateLimit": "Fair-use",
+    "source": "mnfst"
+  },
+  {
+    "id": "nscale-qwen3-coder-30b-a3b-instruct",
+    "providerSlug": "nscale",
+    "modelId": "qwen3-coder-30b-a3b-instruct",
+    "name": "Qwen3-Coder-30B-A3B-Instruct",
+    "modality": [
+      "text"
+    ],
+    "context": "256K",
+    "output": "~32K",
+    "rateLimit": "Fair-use",
+    "source": "mnfst"
+  },
+  {
+    "id": "nvidia-nim-90-more-models",
+    "providerSlug": "nvidia-nim",
+    "modelId": "90-more-models",
+    "name": "+ 90 more models",
+    "modality": [
+      "text",
+      "image",
+      "video",
+      "embeddings"
+    ],
+    "context": "Varies",
+    "output": "Varies",
+    "rateLimit": "~40 RPM",
+    "source": "mnfst"
+  },
+  {
+    "id": "nvidia-nim-deepseek-aideepseek-r1",
+    "providerSlug": "nvidia-nim",
+    "modelId": "deepseek-aideepseek-r1",
+    "name": "`deepseek-ai/deepseek-r1`",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "~163K",
+    "rateLimit": "~40 RPM",
+    "source": "mnfst"
+  },
+  {
+    "id": "nvidia-nim-googlegemma-4-31b",
+    "providerSlug": "nvidia-nim",
+    "modelId": "googlegemma-4-31b",
+    "name": "`google/gemma-4-31b`",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "8K",
+    "rateLimit": "~40 RPM",
+    "source": "mnfst"
+  },
+  {
+    "id": "nvidia-nim-metallama-31-405b-instruct",
+    "providerSlug": "nvidia-nim",
+    "modelId": "metallama-31-405b-instruct",
+    "name": "`meta/llama-3.1-405b-instruct`",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "4K",
+    "rateLimit": "~40 RPM",
+    "source": "mnfst"
+  },
+  {
+    "id": "nvidia-nim-minimaxminimax-m27",
+    "providerSlug": "nvidia-nim",
+    "modelId": "minimaxminimax-m27",
+    "name": "`minimax/minimax-m2.7`",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "8K",
+    "rateLimit": "~40 RPM",
+    "source": "mnfst"
+  },
+  {
+    "id": "nvidia-nim-mistralaimistral-large-2-instruct",
+    "providerSlug": "nvidia-nim",
+    "modelId": "mistralaimistral-large-2-instruct",
+    "name": "`mistralai/mistral-large-2-instruct`",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "4K",
+    "rateLimit": "~40 RPM",
+    "source": "mnfst"
+  },
+  {
+    "id": "nvidia-nim-nvidiallama-31-nemotron-ultra-253b-v1",
+    "providerSlug": "nvidia-nim",
+    "modelId": "nvidiallama-31-nemotron-ultra-253b-v1",
+    "name": "`nvidia/llama-3.1-nemotron-ultra-253b-v1`",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "4K",
+    "rateLimit": "~40 RPM",
+    "source": "mnfst"
+  },
+  {
+    "id": "nvidia-nim-nvidianemotron-3-nano-30b-a3b",
+    "providerSlug": "nvidia-nim",
+    "modelId": "nvidianemotron-3-nano-30b-a3b",
+    "name": "`nvidia/nemotron-3-nano-30b-a3b`",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "32K",
+    "rateLimit": "~40 RPM",
+    "source": "mnfst"
+  },
+  {
+    "id": "nvidia-nim-nvidianemotron-3-super-120b-a12b",
+    "providerSlug": "nvidia-nim",
+    "modelId": "nvidianemotron-3-super-120b-a12b",
+    "name": "`nvidia/nemotron-3-super-120b-a12b`",
+    "modality": [
+      "text"
+    ],
+    "context": "262K",
+    "output": "262K",
+    "rateLimit": "~40 RPM",
+    "source": "mnfst"
+  },
+  {
+    "id": "nvidia-nim-nvidianemotron-35-content-safety",
+    "providerSlug": "nvidia-nim",
+    "modelId": "nvidianemotron-35-content-safety",
+    "name": "nvidia/nemotron-3.5-content-safety",
+    "modality": [
+      "text",
+      "image"
+    ],
+    "context": "128K",
+    "output": "8K",
+    "rateLimit": "Up to 40 RPM",
+    "source": "freellm.net"
+  },
+  {
+    "id": "nvidia-nim-nvidianemotron-nano-2-vl",
+    "providerSlug": "nvidia-nim",
+    "modelId": "nvidianemotron-nano-2-vl",
+    "name": "`nvidia/nemotron-nano-2-vl`",
+    "modality": [
+      "text",
+      "video"
+    ],
+    "context": "128K",
+    "output": "8K",
+    "rateLimit": "~40 RPM",
+    "source": "mnfst"
+  },
+  {
+    "id": "nvidia-nim-qwenqwen25-72b-instruct",
+    "providerSlug": "nvidia-nim",
+    "modelId": "qwenqwen25-72b-instruct",
+    "name": "`qwen/qwen2.5-72b-instruct`",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "8K",
+    "rateLimit": "~40 RPM",
+    "source": "mnfst"
+  },
+  {
+    "id": "nvidia-nim-various-open-models",
+    "providerSlug": "nvidia-nim",
+    "modelId": "various-open-models",
+    "name": "Various open models",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "ollama-cloud-30-more-cloud-models",
+    "providerSlug": "ollama-cloud",
+    "modelId": "30-more-cloud-models",
+    "name": "+ 30 more cloud models",
+    "modality": [
+      "text"
+    ],
+    "context": "Varies",
+    "output": "Varies",
+    "rateLimit": "Session/weekly limits (unpublished)",
+    "source": "mnfst"
+  },
+  {
+    "id": "ollama-cloud-deepseek-r1cloud",
+    "providerSlug": "ollama-cloud",
+    "modelId": "deepseek-r1cloud",
+    "name": "`deepseek-r1:cloud`",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "Model-dependent",
+    "rateLimit": "Session/weekly limits (unpublished)",
+    "source": "mnfst"
+  },
+  {
+    "id": "ollama-cloud-deepseek-v31671b-cloud",
+    "providerSlug": "ollama-cloud",
+    "modelId": "deepseek-v31671b-cloud",
+    "name": "`deepseek-v3.1:671b-cloud`",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "Model-dependent",
+    "rateLimit": "Session/weekly limits (unpublished)",
+    "source": "mnfst"
+  },
+  {
+    "id": "ollama-cloud-glm-46cloud",
+    "providerSlug": "ollama-cloud",
+    "modelId": "glm-46cloud",
+    "name": "`glm-4.6:cloud`",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "Model-dependent",
+    "rateLimit": "Session/weekly limits (unpublished)",
+    "source": "mnfst"
+  },
+  {
+    "id": "ollama-cloud-gpt-oss120b-cloud",
+    "providerSlug": "ollama-cloud",
+    "modelId": "gpt-oss120b-cloud",
+    "name": "`gpt-oss:120b-cloud`",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "Model-dependent",
+    "rateLimit": "Session/weekly limits (unpublished)",
+    "source": "mnfst"
+  },
+  {
+    "id": "ollama-cloud-kimi-k21t-cloud",
+    "providerSlug": "ollama-cloud",
+    "modelId": "kimi-k21t-cloud",
+    "name": "`kimi-k2:1t-cloud`",
+    "modality": [
+      "text"
+    ],
+    "context": "262K",
+    "output": "Model-dependent",
+    "rateLimit": "Session/weekly limits (unpublished)",
+    "source": "mnfst"
+  },
+  {
+    "id": "ollama-cloud-qwen3-coder480b-cloud",
+    "providerSlug": "ollama-cloud",
+    "modelId": "qwen3-coder480b-cloud",
+    "name": "`qwen3-coder:480b-cloud`",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "Model-dependent",
+    "rateLimit": "Session/weekly limits (unpublished)",
+    "source": "mnfst"
+  },
+  {
+    "id": "opencode-zen-big-pickle-stealth",
+    "providerSlug": "opencode-zen",
+    "modelId": "big-pickle-stealth",
+    "name": "Big Pickle Stealth",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "opencode-zen-deepseek-v4-flash-free",
+    "providerSlug": "opencode-zen",
+    "modelId": "deepseek-v4-flash-free",
+    "name": "DeepSeek V4 Flash Free",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "opencode-zen-nemotron-3-super-free",
+    "providerSlug": "opencode-zen",
+    "modelId": "nemotron-3-super-free",
+    "name": "Nemotron 3 Super Free",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "openrouter-16-more-free-models",
+    "providerSlug": "openrouter",
+    "modelId": "16-more-free-models",
+    "name": "+ ~16 more free models",
+    "modality": [
+      "text",
+      "image"
+    ],
+    "context": "Varies",
+    "output": "Varies",
+    "rateLimit": "20 RPM, 50 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "openrouter-cognitivecomputationsdolphin-mistral-24b-venice-editionfree",
+    "providerSlug": "openrouter",
+    "modelId": "cognitivecomputationsdolphin-mistral-24b-venice-editionfree",
+    "name": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "openrouter-deepseekdeepseek-chat-v31free",
+    "providerSlug": "openrouter",
+    "modelId": "deepseekdeepseek-chat-v31free",
+    "name": "`deepseek/deepseek-chat-v3.1:free`",
+    "modality": [
+      "text"
+    ],
+    "context": "163K",
+    "output": "163K",
+    "rateLimit": "20 RPM, 50 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "openrouter-deepseekdeepseek-r1-0528free",
+    "providerSlug": "openrouter",
+    "modelId": "deepseekdeepseek-r1-0528free",
+    "name": "`deepseek/deepseek-r1-0528:free`",
+    "modality": [
+      "text"
+    ],
+    "context": "163K",
+    "output": "~163K",
+    "rateLimit": "20 RPM, 50 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "openrouter-deepseekdeepseek-v4-flashfree",
+    "providerSlug": "openrouter",
+    "modelId": "deepseekdeepseek-v4-flashfree",
+    "name": "deepseek/deepseek-v4-flash:free",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "openrouter-google-gemma-4-26b-a4b",
+    "providerSlug": "openrouter",
+    "modelId": "google-gemma-4-26b-a4b",
+    "name": "Google: Gemma 4 26B A4B",
+    "modality": [
+      "text",
+      "image"
+    ],
+    "context": "262K",
+    "output": "33K",
+    "rateLimit": "See provider page",
+    "source": "freellm.net"
+  },
+  {
+    "id": "openrouter-google-gemma-4-31b",
+    "providerSlug": "openrouter",
+    "modelId": "google-gemma-4-31b",
+    "name": "Google: Gemma 4 31B",
+    "modality": [
+      "text",
+      "image"
+    ],
+    "context": "262K",
+    "output": "33K",
+    "rateLimit": "See provider page",
+    "source": "freellm.net"
+  },
+  {
+    "id": "openrouter-googlegemma-4-26b-a4b-itfree",
+    "providerSlug": "openrouter",
+    "modelId": "googlegemma-4-26b-a4b-itfree",
+    "name": "google/gemma-4-26b-a4b-it:free",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "openrouter-googlegemma-4-31b-itfree",
+    "providerSlug": "openrouter",
+    "modelId": "googlegemma-4-31b-itfree",
+    "name": "`google/gemma-4-31b-it:free`",
+    "modality": [
+      "text"
+    ],
+    "context": "256K",
+    "output": "~8K",
+    "rateLimit": "20 RPM, 50 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "openrouter-hermes-3-llama-31-405b",
+    "providerSlug": "openrouter",
+    "modelId": "hermes-3-llama-31-405b",
+    "name": "Hermes 3 Llama 3.1 405B",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "openrouter-liquidlfm-25-12b-instructfree",
+    "providerSlug": "openrouter",
+    "modelId": "liquidlfm-25-12b-instructfree",
+    "name": "liquid/lfm-2.5-1.2b-instruct:free",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "openrouter-liquidlfm-25-12b-thinkingfree",
+    "providerSlug": "openrouter",
+    "modelId": "liquidlfm-25-12b-thinkingfree",
+    "name": "liquid/lfm-2.5-1.2b-thinking:free",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "openrouter-llama-32-3b-instruct",
+    "providerSlug": "openrouter",
+    "modelId": "llama-32-3b-instruct",
+    "name": "Llama 3.2 3B Instruct",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "openrouter-llama-33-70b-instruct",
+    "providerSlug": "openrouter",
+    "modelId": "llama-33-70b-instruct",
+    "name": "Llama 3.3 70B Instruct",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "openrouter-meta-llamallama-33-70b-instructfree",
+    "providerSlug": "openrouter",
+    "modelId": "meta-llamallama-33-70b-instructfree",
+    "name": "`meta-llama/llama-3.3-70b-instruct:free`",
+    "modality": [
+      "text"
+    ],
+    "context": "65K",
+    "output": "~16K",
+    "rateLimit": "20 RPM, 50 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "openrouter-meta-llamallama-4-maverickfree",
+    "providerSlug": "openrouter",
+    "modelId": "meta-llamallama-4-maverickfree",
+    "name": "`meta-llama/llama-4-maverick:free`",
+    "modality": [
+      "text"
+    ],
+    "context": "1M",
+    "output": "16K",
+    "rateLimit": "20 RPM, 50 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "openrouter-meta-llamallama-4-scoutfree",
+    "providerSlug": "openrouter",
+    "modelId": "meta-llamallama-4-scoutfree",
+    "name": "`meta-llama/llama-4-scout:free`",
+    "modality": [
+      "text"
+    ],
+    "context": "10M",
+    "output": "16K",
+    "rateLimit": "20 RPM, 50 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "openrouter-minimaxminimax-m25free",
+    "providerSlug": "openrouter",
+    "modelId": "minimaxminimax-m25free",
+    "name": "`minimax/minimax-m2.5:free`",
+    "modality": [
+      "text"
+    ],
+    "context": "196K",
+    "output": "8K",
+    "rateLimit": "20 RPM, 50 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "openrouter-mistralaidevstral-2512free",
+    "providerSlug": "openrouter",
+    "modelId": "mistralaidevstral-2512free",
+    "name": "`mistralai/devstral-2512:free`",
+    "modality": [
+      "text"
+    ],
+    "context": "256K",
+    "output": "~32K",
+    "rateLimit": "20 RPM, 50 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "openrouter-moonshotai-kimi-k26",
+    "providerSlug": "openrouter",
+    "modelId": "moonshotai-kimi-k26",
+    "name": "MoonshotAI: Kimi K2.6",
+    "modality": [
+      "text",
+      "image"
+    ],
+    "context": "262K",
+    "output": "8K",
+    "rateLimit": "See provider page",
+    "source": "freellm.net"
+  },
+  {
+    "id": "openrouter-moonshotaikimi-k26free",
+    "providerSlug": "openrouter",
+    "modelId": "moonshotaikimi-k26free",
+    "name": "moonshotai/kimi-k2.6:free",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "openrouter-nvidia-nemotron-3-nano-omni",
+    "providerSlug": "openrouter",
+    "modelId": "nvidia-nemotron-3-nano-omni",
+    "name": "NVIDIA: Nemotron 3 Nano Omni",
+    "modality": [
+      "text",
+      "image",
+      "audio"
+    ],
+    "context": "256K",
+    "output": "66K",
+    "rateLimit": "See provider page",
+    "source": "freellm.net"
+  },
+  {
+    "id": "openrouter-nvidia-nemotron-3-ultra",
+    "providerSlug": "openrouter",
+    "modelId": "nvidia-nemotron-3-ultra",
+    "name": "NVIDIA: Nemotron 3 Ultra",
+    "modality": [
+      "text"
+    ],
+    "context": "1.0M",
+    "output": "66K",
+    "rateLimit": "See provider page",
+    "source": "freellm.net"
+  },
+  {
+    "id": "openrouter-nvidia-nemotron-35-content-safety",
+    "providerSlug": "openrouter",
+    "modelId": "nvidia-nemotron-35-content-safety",
+    "name": "NVIDIA: Nemotron 3.5 Content Safety",
+    "modality": [
+      "text",
+      "image"
+    ],
+    "context": "128K",
+    "output": "8K",
+    "rateLimit": "See provider page",
+    "source": "freellm.net"
+  },
+  {
+    "id": "openrouter-nvidianemotron-3-nano-30b-a3bfree",
+    "providerSlug": "openrouter",
+    "modelId": "nvidianemotron-3-nano-30b-a3bfree",
+    "name": "nvidia/nemotron-3-nano-30b-a3b:free",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "openrouter-nvidianemotron-3-nano-omni-30b-a3b-reasoningfree",
+    "providerSlug": "openrouter",
+    "modelId": "nvidianemotron-3-nano-omni-30b-a3b-reasoningfree",
+    "name": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "openrouter-nvidianemotron-3-super-120b-a12bfree",
+    "providerSlug": "openrouter",
+    "modelId": "nvidianemotron-3-super-120b-a12bfree",
+    "name": "`nvidia/nemotron-3-super-120b-a12b:free`",
+    "modality": [
+      "text"
+    ],
+    "context": "1M",
+    "output": "~32K",
+    "rateLimit": "20 RPM, 50 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "openrouter-nvidianemotron-nano-12b-v2-vlfree",
+    "providerSlug": "openrouter",
+    "modelId": "nvidianemotron-nano-12b-v2-vlfree",
+    "name": "nvidia/nemotron-nano-12b-v2-vl:free",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "openrouter-nvidianemotron-nano-9b-v2free",
+    "providerSlug": "openrouter",
+    "modelId": "nvidianemotron-nano-9b-v2free",
+    "name": "nvidia/nemotron-nano-9b-v2:free",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "openrouter-openaigpt-oss-120bfree",
+    "providerSlug": "openrouter",
+    "modelId": "openaigpt-oss-120bfree",
+    "name": "`openai/gpt-oss-120b:free`",
+    "modality": [
+      "text"
+    ],
+    "context": "131K",
+    "output": "131K",
+    "rateLimit": "20 RPM, 50 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "openrouter-openaigpt-oss-20bfree",
+    "providerSlug": "openrouter",
+    "modelId": "openaigpt-oss-20bfree",
+    "name": "openai/gpt-oss-20b:free",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "openrouter-owl-alpha",
+    "providerSlug": "openrouter",
+    "modelId": "owl-alpha",
+    "name": "Owl Alpha",
+    "modality": [
+      "text"
+    ],
+    "context": "1.0M",
+    "output": "262K",
+    "rateLimit": "See provider page",
+    "source": "freellm.net"
+  },
+  {
+    "id": "openrouter-poolside-laguna-m1",
+    "providerSlug": "openrouter",
+    "modelId": "poolside-laguna-m1",
+    "name": "Poolside: Laguna M.1",
+    "modality": [
+      "text"
+    ],
+    "context": "262K",
+    "output": "33K",
+    "rateLimit": "See provider page",
+    "source": "freellm.net"
+  },
+  {
+    "id": "openrouter-poolside-laguna-xs2",
+    "providerSlug": "openrouter",
+    "modelId": "poolside-laguna-xs2",
+    "name": "Poolside: Laguna XS.2",
+    "modality": [
+      "text"
+    ],
+    "context": "262K",
+    "output": "33K",
+    "rateLimit": "See provider page",
+    "source": "freellm.net"
+  },
+  {
+    "id": "openrouter-poolsidelaguna-m1free",
+    "providerSlug": "openrouter",
+    "modelId": "poolsidelaguna-m1free",
+    "name": "poolside/laguna-m.1:free",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "openrouter-poolsidelaguna-xs2free",
+    "providerSlug": "openrouter",
+    "modelId": "poolsidelaguna-xs2free",
+    "name": "poolside/laguna-xs.2:free",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "openrouter-qwenqwen3-235b-a22bfree",
+    "providerSlug": "openrouter",
+    "modelId": "qwenqwen3-235b-a22bfree",
+    "name": "`qwen/qwen3-235b-a22b:free`",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "~32K",
+    "rateLimit": "20 RPM, 50 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "openrouter-qwenqwen3-coder-480b-a35bfree",
+    "providerSlug": "openrouter",
+    "modelId": "qwenqwen3-coder-480b-a35bfree",
+    "name": "`qwen/qwen3-coder-480b-a35b:free`",
+    "modality": [
+      "text"
+    ],
+    "context": "262K",
+    "output": "~32K",
+    "rateLimit": "20 RPM, 50 RPD",
+    "source": "mnfst"
+  },
+  {
+    "id": "openrouter-qwenqwen3-coderfree",
+    "providerSlug": "openrouter",
+    "modelId": "qwenqwen3-coderfree",
+    "name": "qwen/qwen3-coder:free",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "openrouter-qwenqwen3-next-80b-a3b-instructfree",
+    "providerSlug": "openrouter",
+    "modelId": "qwenqwen3-next-80b-a3b-instructfree",
+    "name": "qwen/qwen3-next-80b-a3b-instruct:free",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "openrouter-z-aiglm-45-airfree",
+    "providerSlug": "openrouter",
+    "modelId": "z-aiglm-45-airfree",
+    "name": "z-ai/glm-4.5-air:free",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "ovhcloud-ai-endpoints-30-more-models",
+    "providerSlug": "ovhcloud-ai-endpoints",
+    "modelId": "30-more-models",
+    "name": "+ 30 more models",
+    "modality": [
+      "text",
+      "code",
+      "image"
+    ],
+    "context": "Varies",
+    "output": "Varies",
+    "rateLimit": "2 RPM (anonymous)",
+    "source": "mnfst"
+  },
+  {
+    "id": "ovhcloud-ai-endpoints-deepseek-r1-distill-llama-70b",
+    "providerSlug": "ovhcloud-ai-endpoints",
+    "modelId": "deepseek-r1-distill-llama-70b",
+    "name": "DeepSeek-R1-Distill-Llama-70B",
+    "modality": [
+      "text"
+    ],
+    "context": "131K",
+    "output": "~32K",
+    "rateLimit": "2 RPM (anonymous)",
+    "source": "mnfst"
+  },
+  {
+    "id": "ovhcloud-ai-endpoints-meta-llama-3_1-8b-instruct",
+    "providerSlug": "ovhcloud-ai-endpoints",
+    "modelId": "meta-llama-3_1-8b-instruct",
+    "name": "Meta-Llama-3_1-8B-Instruct",
+    "modality": [
+      "text"
+    ],
+    "context": "131K",
+    "output": "~4K",
+    "rateLimit": "2 RPM (anonymous)",
+    "source": "mnfst"
+  },
+  {
+    "id": "ovhcloud-ai-endpoints-meta-llama-3_3-70b-instruct",
+    "providerSlug": "ovhcloud-ai-endpoints",
+    "modelId": "meta-llama-3_3-70b-instruct",
+    "name": "Meta-Llama-3_3-70B-Instruct",
+    "modality": [
+      "text"
+    ],
+    "context": "131K",
+    "output": "~4K",
+    "rateLimit": "2 RPM (anonymous)",
+    "source": "mnfst"
+  },
+  {
+    "id": "ovhcloud-ai-endpoints-mistral-nemo-instruct-2407",
+    "providerSlug": "ovhcloud-ai-endpoints",
+    "modelId": "mistral-nemo-instruct-2407",
+    "name": "Mistral-Nemo-Instruct-2407",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "~4K",
+    "rateLimit": "2 RPM (anonymous)",
+    "source": "mnfst"
+  },
+  {
+    "id": "ovhcloud-ai-endpoints-mixtral-8x7b-instruct-v01",
+    "providerSlug": "ovhcloud-ai-endpoints",
+    "modelId": "mixtral-8x7b-instruct-v01",
+    "name": "Mixtral-8x7B-Instruct-v0.1",
+    "modality": [
+      "text"
+    ],
+    "context": "32K",
+    "output": "~4K",
+    "rateLimit": "2 RPM (anonymous)",
+    "source": "mnfst"
+  },
+  {
+    "id": "ovhcloud-ai-endpoints-qwen25-vl-72b-instruct",
+    "providerSlug": "ovhcloud-ai-endpoints",
+    "modelId": "qwen25-vl-72b-instruct",
+    "name": "Qwen2.5-VL-72B-Instruct",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "~8K",
+    "rateLimit": "2 RPM (anonymous)",
+    "source": "mnfst"
+  },
+  {
+    "id": "ovhcloud-ai-endpoints-qwen3-32b",
+    "providerSlug": "ovhcloud-ai-endpoints",
+    "modelId": "qwen3-32b",
+    "name": "Qwen3-32B",
+    "modality": [
+      "text"
+    ],
+    "context": "131K",
+    "output": "~32K",
+    "rateLimit": "2 RPM (anonymous)",
+    "source": "mnfst"
+  },
+  {
+    "id": "ovhcloud-ai-endpoints-qwen3-coder-30b-a3b-instruct",
+    "providerSlug": "ovhcloud-ai-endpoints",
+    "modelId": "qwen3-coder-30b-a3b-instruct",
+    "name": "Qwen3-Coder-30B-A3B-Instruct",
+    "modality": [
+      "text"
+    ],
+    "context": "262K",
+    "output": "~32K",
+    "rateLimit": "2 RPM (anonymous)",
+    "source": "mnfst"
+  },
+  {
+    "id": "ovhcloud-ai-endpoints-qwen3guard-gen-06b",
+    "providerSlug": "ovhcloud-ai-endpoints",
+    "modelId": "qwen3guard-gen-06b",
+    "name": "Qwen3Guard-Gen-0.6B",
+    "modality": [
+      "text"
+    ],
+    "context": "32K",
+    "output": "~4K",
+    "rateLimit": "2 RPM (anonymous)",
+    "source": "mnfst"
+  },
+  {
+    "id": "ovhcloud-ai-endpoints-qwen3guard-gen-8b",
+    "providerSlug": "ovhcloud-ai-endpoints",
+    "modelId": "qwen3guard-gen-8b",
+    "name": "Qwen3Guard-Gen-8B",
+    "modality": [
+      "text"
+    ],
+    "context": "32K",
+    "output": "~4K",
+    "rateLimit": "2 RPM (anonymous)",
+    "source": "mnfst"
+  },
+  {
+    "id": "sambanova-cloud-deepseek-v31",
+    "providerSlug": "sambanova-cloud",
+    "modelId": "deepseek-v31",
+    "name": "deepseek-v3.1",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "sambanova-cloud-deepseek-v32",
+    "providerSlug": "sambanova-cloud",
+    "modelId": "deepseek-v32",
+    "name": "deepseek-v3.2",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "sambanova-cloud-gemma-3-12b-it",
+    "providerSlug": "sambanova-cloud",
+    "modelId": "gemma-3-12b-it",
+    "name": "gemma-3-12b-it",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "sambanova-cloud-gpt-oss-120b",
+    "providerSlug": "sambanova-cloud",
+    "modelId": "gpt-oss-120b",
+    "name": "gpt-oss-120b",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "sambanova-cloud-llama-4-maverick-17b-128e-instruct",
+    "providerSlug": "sambanova-cloud",
+    "modelId": "llama-4-maverick-17b-128e-instruct",
+    "name": "llama-4-maverick-17b-128e-instruct",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "sambanova-cloud-meta-llama-33-70b-instruct",
+    "providerSlug": "sambanova-cloud",
+    "modelId": "meta-llama-33-70b-instruct",
+    "name": "meta-llama-3.3-70b-instruct",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "sambanova-cloud-minimax-m27",
+    "providerSlug": "sambanova-cloud",
+    "modelId": "minimax-m27",
+    "name": "minimax-m2.7",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "scaleway-generative-apis-bge-multilingual-gemma2",
+    "providerSlug": "scaleway-generative-apis",
+    "modelId": "bge-multilingual-gemma2",
+    "name": "BGE-Multilingual-Gemma2",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "scaleway-generative-apis-devstral-2-123b-instruct-2512",
+    "providerSlug": "scaleway-generative-apis",
+    "modelId": "devstral-2-123b-instruct-2512",
+    "name": "devstral-2-123b-instruct-2512",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "scaleway-generative-apis-gemma-3-27b-instruct",
+    "providerSlug": "scaleway-generative-apis",
+    "modelId": "gemma-3-27b-instruct",
+    "name": "Gemma 3 27B Instruct",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "scaleway-generative-apis-gemma-4-26b-a4b-it",
+    "providerSlug": "scaleway-generative-apis",
+    "modelId": "gemma-4-26b-a4b-it",
+    "name": "gemma-4-26b-a4b-it",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "scaleway-generative-apis-gpt-oss-120b",
+    "providerSlug": "scaleway-generative-apis",
+    "modelId": "gpt-oss-120b",
+    "name": "gpt-oss-120b",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "scaleway-generative-apis-holo2-30b-a3b",
+    "providerSlug": "scaleway-generative-apis",
+    "modelId": "holo2-30b-a3b",
+    "name": "holo2-30b-a3b",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "scaleway-generative-apis-llama-33-70b-instruct",
+    "providerSlug": "scaleway-generative-apis",
+    "modelId": "llama-33-70b-instruct",
+    "name": "Llama 3.3 70B Instruct",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "scaleway-generative-apis-mistral-medium-35-128b",
+    "providerSlug": "scaleway-generative-apis",
+    "modelId": "mistral-medium-35-128b",
+    "name": "mistral-medium-3.5-128b",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "scaleway-generative-apis-mistral-small-32-24b-instruct-2506",
+    "providerSlug": "scaleway-generative-apis",
+    "modelId": "mistral-small-32-24b-instruct-2506",
+    "name": "mistral-small-3.2-24b-instruct-2506",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "scaleway-generative-apis-pixtral-12b-2409",
+    "providerSlug": "scaleway-generative-apis",
+    "modelId": "pixtral-12b-2409",
+    "name": "Pixtral 12B (2409)",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "scaleway-generative-apis-qwen3-235b-a22b-instruct-2507",
+    "providerSlug": "scaleway-generative-apis",
+    "modelId": "qwen3-235b-a22b-instruct-2507",
+    "name": "qwen3-235b-a22b-instruct-2507",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "scaleway-generative-apis-qwen3-coder-30b-a3b-instruct",
+    "providerSlug": "scaleway-generative-apis",
+    "modelId": "qwen3-coder-30b-a3b-instruct",
+    "name": "qwen3-coder-30b-a3b-instruct",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "scaleway-generative-apis-qwen3-embedding-8b",
+    "providerSlug": "scaleway-generative-apis",
+    "modelId": "qwen3-embedding-8b",
+    "name": "qwen3-embedding-8b",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "scaleway-generative-apis-qwen35-397b-a17b",
+    "providerSlug": "scaleway-generative-apis",
+    "modelId": "qwen35-397b-a17b",
+    "name": "qwen3.5-397b-a17b",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "scaleway-generative-apis-qwen36-35b-a3b",
+    "providerSlug": "scaleway-generative-apis",
+    "modelId": "qwen36-35b-a3b",
+    "name": "qwen3.6-35b-a3b",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "scaleway-generative-apis-voxtral-small-24b-2507",
+    "providerSlug": "scaleway-generative-apis",
+    "modelId": "voxtral-small-24b-2507",
+    "name": "voxtral-small-24b-2507",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "scaleway-generative-apis-whisper-large-v3",
+    "providerSlug": "scaleway-generative-apis",
+    "modelId": "whisper-large-v3",
+    "name": "Whisper Large v3",
+    "modality": [
+      "text"
+    ],
+    "source": "cheahjs"
+  },
+  {
+    "id": "siliconflow-deepseek-aideepseek-ocr",
+    "providerSlug": "siliconflow",
+    "modelId": "deepseek-aideepseek-ocr",
+    "name": "`deepseek-ai/DeepSeek-OCR`",
+    "modality": [
+      "text"
+    ],
+    "output": "8K",
+    "rateLimit": "30 RPM, 60K TPM",
+    "source": "mnfst"
+  },
+  {
+    "id": "siliconflow-deepseek-aideepseek-r1-distill-qwen-7b",
+    "providerSlug": "siliconflow",
+    "modelId": "deepseek-aideepseek-r1-distill-qwen-7b",
+    "name": "`deepseek-ai/DeepSeek-R1-Distill-Qwen-7B`",
+    "modality": [
+      "text"
+    ],
+    "context": "131K",
+    "output": "Configurable",
+    "rateLimit": "30 RPM, 60K TPM",
+    "source": "mnfst"
+  },
+  {
+    "id": "siliconflow-qwenqwen3-8b",
+    "providerSlug": "siliconflow",
+    "modelId": "qwenqwen3-8b",
+    "name": "`Qwen/Qwen3-8B`",
+    "modality": [
+      "text"
+    ],
+    "context": "131K",
+    "output": "131K",
+    "rateLimit": "30 RPM, 60K TPM",
+    "source": "mnfst"
+  },
+  {
+    "id": "xai-grok-3-mini",
+    "providerSlug": "xai",
+    "modelId": "grok-3-mini",
+    "name": "grok-3-mini",
+    "modality": [
+      "text"
+    ],
+    "context": "131K",
+    "output": "8K",
+    "rateLimit": "Credit-based",
+    "source": "mnfst"
+  },
+  {
+    "id": "xai-grok-41-fast",
+    "providerSlug": "xai",
+    "modelId": "grok-41-fast",
+    "name": "grok-4.1-fast",
+    "modality": [
+      "text"
+    ],
+    "context": "2M",
+    "output": "~32K",
+    "rateLimit": "Credit-based",
+    "source": "mnfst"
+  },
+  {
+    "id": "xai-grok-43",
+    "providerSlug": "xai",
+    "modelId": "grok-43",
+    "name": "grok-4.3",
+    "modality": [
+      "text"
+    ],
+    "context": "1M",
+    "output": "~32K",
+    "rateLimit": "Credit-based",
+    "source": "mnfst"
+  },
+  {
+    "id": "z-ai-zhipu-ai-glm-45-flash",
+    "providerSlug": "z-ai-zhipu-ai",
+    "modelId": "glm-45-flash",
+    "name": "GLM-4.5-Flash",
+    "modality": [
+      "text"
+    ],
+    "context": "128K",
+    "output": "~8K",
+    "rateLimit": "1 concurrent request",
+    "source": "mnfst"
+  },
+  {
+    "id": "z-ai-zhipu-ai-glm-46v-flash",
+    "providerSlug": "z-ai-zhipu-ai",
+    "modelId": "glm-46v-flash",
+    "name": "GLM-4.6V-Flash",
+    "modality": [
+      "text",
+      "image"
+    ],
+    "context": "128K",
+    "output": "~4K",
+    "rateLimit": "1 concurrent request",
+    "source": "mnfst"
+  },
+  {
+    "id": "z-ai-zhipu-ai-glm-47-flash",
+    "providerSlug": "z-ai-zhipu-ai",
+    "modelId": "glm-47-flash",
+    "name": "GLM-4.7-Flash",
+    "modality": [
+      "text"
+    ],
+    "context": "200K",
+    "output": "128K",
+    "rateLimit": "1 concurrent request",
+    "source": "mnfst"
+  }
+]

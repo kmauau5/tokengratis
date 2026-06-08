@@ -8,12 +8,13 @@ import Logo from "./Logo";
 interface Provider {
   id: string;
   name: string;
-  logo?: string;
-  models_count: number;
+  logoUrl?: string;
+  modelCount: number;
   type?: string;
-  rate_limit?: string;
-  description?: string;
-  modalities: string[];
+  freeSummary?: string;
+  notes?: string;
+  maxContext?: string;
+  capabilities: string[];
 }
 
 export default function DirectoryClient({ providers, dict, lang }: { providers: Provider[], dict: any, lang: string }) {
@@ -27,19 +28,32 @@ export default function DirectoryClient({ providers, dict, lang }: { providers: 
     setMounted(true);
   }, []);
 
-  const filters = ["all", "text", "vision", "image", "audio", "video", "code"];
+  const filters = ["all", "text", "vision", "image", "audio", "video", "code", "embeddings", "reranking"];
+
+  const parseContext = (ctx?: string) => {
+    if (!ctx) return 0;
+    const clean = ctx.toUpperCase().replace(/[^0-9.KMB]/g, '');
+    let multiplier = 1;
+    if (clean.includes('K')) multiplier = 1000;
+    if (clean.includes('M')) multiplier = 1000000;
+    if (clean.includes('B')) multiplier = 1000000000;
+    const num = parseFloat(clean.replace(/[KMB]/g, ''));
+    return isNaN(num) ? 0 : num * multiplier;
+  };
 
   const filteredProviders = providers.filter((p) => {
-    const matchesFilter = activeFilter === "all" || p.modalities.includes(activeFilter);
+    const matchesFilter = activeFilter === "all" || p.capabilities.includes(activeFilter);
     const matchesSearch = p.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                          (p.description && p.description.toLowerCase().includes(searchQuery.toLowerCase()));
+                          (p.notes && p.notes.toLowerCase().includes(searchQuery.toLowerCase()));
     
     return matchesFilter && matchesSearch;
   }).sort((a, b) => {
     if (sortMode === "name") {
       return a.name.localeCompare(b.name);
     } else if (sortMode === "models") {
-      return b.models_count - a.models_count;
+      return b.modelCount - a.modelCount;
+    } else if (sortMode === "max_context") {
+      return parseContext(b.maxContext) - parseContext(a.maxContext);
     }
     // "popular" is default, we assume it's the original JSON order or we can just keep it as is
     return 0; 
@@ -131,6 +145,7 @@ export default function DirectoryClient({ providers, dict, lang }: { providers: 
                 onChange={(e) => setSortMode(e.target.value)}
               >
                 <option value="popular">{dict.directory.sort_popular}</option>
+                <option value="max_context">{dict.directory.sort_context || "Context Terbesar"}</option>
                 <option value="name">{dict.directory.sort_name}</option>
                 <option value="models">{dict.directory.sort_models}</option>
               </select>
@@ -150,8 +165,8 @@ export default function DirectoryClient({ providers, dict, lang }: { providers: 
               <a key={provider.id} href={`/${lang}/provider/${provider.id}`} className={styles.providerRow + " card"}>
                 <div className={styles.providerHeader}>
                   <div className={styles.providerLogo}>
-                    {provider.logo ? (
-                      <img src={provider.logo} alt={provider.name} />
+                    {provider.logoUrl ? (
+                      <img src={provider.logoUrl} alt={provider.name} />
                     ) : (
                       <span>{provider.name.charAt(0)}</span>
                     )}
@@ -159,24 +174,24 @@ export default function DirectoryClient({ providers, dict, lang }: { providers: 
                   <div>
                     <span className={styles.providerName}>{provider.name}</span>
                     <div className={styles.providerMeta}>
-                      <span className={styles.modelsCount}>{provider.models_count} {dict.directory.models}</span>
+                      <span className={styles.modelsCount}>{provider.modelCount} {dict.directory.models}</span>
                       {provider.type && <span className={styles.providerType}>{provider.type}</span>}
                     </div>
                   </div>
                 </div>
                 
                 <div className={styles.modalityIcons}>
-                  {provider.modalities.map((m) => (
+                  {provider.capabilities.map((m) => (
                     <span key={m} className={styles.modalityIcon} title={m}>
                       {m.charAt(0).toUpperCase()}
                     </span>
                   ))}
                 </div>
                 
-                <div className={styles.rateLimit}>{provider.rate_limit || dict.directory.unknown}</div>
+                <div className={styles.rateLimit}>{provider.freeSummary || dict.directory.unknown}</div>
                 
                 <div className={styles.description}>
-                  {provider.description || dict.directory.no_desc}
+                  {provider.notes || dict.directory.no_desc}
                 </div>
                 
                 <div className={styles.actions}>

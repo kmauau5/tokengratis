@@ -43,6 +43,7 @@ export function normalizeFreellm(rawData: any[]): { providers: Provider[], model
         domain: providerSlug + ".com", // Placeholder
         modelCount: 0,
         capabilities: [],
+        logoUrl: `https://www.google.com/s2/favicons?domain=${providerSlug}.com&sz=128`,
         sources: [{ name: "freellm.net", url: "https://freellm.net" }],
         lastSyncedAt: new Date().toISOString()
       });
@@ -107,6 +108,7 @@ export function normalizeAwesome(rawData: any[]): { providers: Provider[], model
         apiKeyUrl: providerUrl,
         modelCount: 0,
         capabilities: [],
+        logoUrl: `https://www.google.com/s2/favicons?domain=${new URL(providerUrl).hostname}&sz=128`,
         sources: [{ name: "mnfst/awesome-free-llm-apis", url: "https://github.com/mnfst/awesome-free-llm-apis" }],
         lastSyncedAt: new Date().toISOString(),
         notes: ""
@@ -202,6 +204,7 @@ export function normalizeResources(rawData: any[]): { providers: Provider[], mod
           domain: new URL(providerUrl).hostname,
           modelCount: 0,
           capabilities: [],
+          logoUrl: `https://www.google.com/s2/favicons?domain=${new URL(providerUrl).hostname}&sz=128`,
           sources: [{ name: "cheahjs/free-llm-api-resources", url: "https://github.com/cheahjs/free-llm-api-resources" }],
           lastSyncedAt: new Date().toISOString(),
           freeSummary: ""

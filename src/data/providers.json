@@ -7,13 +7,14 @@
     "domain": "studio.ai21.com",
     "modelCount": 0,
     "capabilities": [],
+    "logoUrl": "/logos/ai21.png",
     "sources": [
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.806Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.248Z",
     "freeSummary": ""
   },
   {
@@ -27,13 +28,14 @@
     "capabilities": [
       "text"
     ],
+    "logoUrl": "/logos/ai21-labs.png",
     "sources": [
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.805Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.247Z",
     "notes": "$10 trial credits at signup, no credit card. Credits expire in 3 months. Covers Jamba Large and Jamba Mini.",
     "baseUrl": "https://api.ai21.com/studio/v1",
     "maxContext": "256K"
@@ -49,13 +51,14 @@
     "capabilities": [
       "text"
     ],
+    "logoUrl": "/logos/aion-labs.png",
     "sources": [
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.805Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.247Z",
     "notes": "Free daily token allowance, no credit card required. Specialized for roleplay and storytelling.",
     "baseUrl": "https://api.aionlabs.ai/v1",
     "maxContext": "131K"
@@ -68,13 +71,14 @@
     "domain": "bailian.console.alibabacloud.com",
     "modelCount": 0,
     "capabilities": [],
+    "logoUrl": "/logos/alibaba-cloud-international-model-studio.png",
     "sources": [
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.806Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.248Z",
     "freeSummary": ""
   },
   {
@@ -88,13 +92,14 @@
     "capabilities": [
       "text"
     ],
+    "logoUrl": "/logos/alibaba-cloud-model-studio.png",
     "sources": [
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.805Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.247Z",
     "notes": "1M free tokens per Qwen model on signup, expires in 90 days (International / Singapore region). No credit card required. [^8]",
     "baseUrl": "https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
     "maxContext": "1M"
@@ -113,7 +118,7 @@
         "url": "https://github.com/cheahjs/free-llm-api-resources"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.806Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.248Z",
     "freeSummary": ""
   },
   {
@@ -127,6 +132,7 @@
     "capabilities": [
       "text"
     ],
+    "logoUrl": "/logos/cerebras.png",
     "sources": [
       {
         "name": "mnfst/awesome-free-llm-apis",
@@ -137,7 +143,7 @@
         "url": "https://github.com/cheahjs/free-llm-api-resources"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.805Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.247Z",
     "notes": "Free tier, no credit card. Ultra-fast inference (~2,600 tok/s). 1M tokens/day cap. 8K context cap on free tier. llama3.1-8b scheduled for deprecation May 27, 2026.",
     "baseUrl": "https://api.cerebras.ai/v1",
     "freeSummary": "",
@@ -157,6 +163,7 @@
       "image",
       "text"
     ],
+    "logoUrl": "/logos/cloudflare-workers-ai.png",
     "sources": [
       {
         "name": "mnfst/awesome-free-llm-apis",
@@ -167,7 +174,7 @@
         "url": "https://github.com/cheahjs/free-llm-api-resources"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.805Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.247Z",
     "notes": "10,000 Neurons/day free. 50+ models available on free tier.",
     "baseUrl": "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run",
     "freeSummary": "",
@@ -196,7 +203,7 @@
         "url": "https://github.com/cheahjs/free-llm-api-resources"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.805Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.247Z",
     "notes": "Free \"Trial\" API key, no credit card. 1,000 API calls/month. Non-commercial use only.",
     "baseUrl": "https://api.cohere.com/v2",
     "freeSummary": "20 requests/minute 1,000 requests/month Models share a common monthly quota.",
@@ -213,13 +220,14 @@
     "capabilities": [
       "text"
     ],
+    "logoUrl": "/logos/deepseek.png",
     "sources": [
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.805Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.247Z",
     "notes": "5M free tokens on signup, no credit card. Credits expire 30 days after signup; pay-as-you-go after. Prompts may be used for training unless opted out. [^9]",
     "baseUrl": "https://api.deepseek.com/v1",
     "maxContext": "128K"
@@ -238,7 +246,7 @@
         "url": "https://github.com/cheahjs/free-llm-api-resources"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.806Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.248Z",
     "freeSummary": ""
   },
   {
@@ -253,6 +261,7 @@
       "image",
       "text"
     ],
+    "logoUrl": "/logos/github-models.png",
     "sources": [
       {
         "name": "mnfst/awesome-free-llm-apis",
@@ -263,7 +272,7 @@
         "url": "https://github.com/cheahjs/free-llm-api-resources"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.805Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.247Z",
     "notes": "Free prototyping for all GitHub users. 45+ models. Per-request limits (8K in / 4K out).",
     "baseUrl": "https://models.github.ai/inference",
     "freeSummary": "",
@@ -277,13 +286,14 @@
     "domain": "aistudio.google.com",
     "modelCount": 0,
     "capabilities": [],
+    "logoUrl": "/logos/google-ai-studio.png",
     "sources": [
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.806Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.248Z",
     "freeSummary": ""
   },
   {
@@ -300,13 +310,14 @@
       "text",
       "video"
     ],
+    "logoUrl": "/logos/google-gemini.png",
     "sources": [
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.805Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.247Z",
     "notes": "Free tier unavailable in EU/UK/Switzerland. Free-tier prompts may be used by Google to improve products. [^1]",
     "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
     "maxContext": "2M"
@@ -323,6 +334,7 @@
       "audio",
       "text"
     ],
+    "logoUrl": "/logos/groq.png",
     "sources": [
       {
         "name": "mnfst/awesome-free-llm-apis",
@@ -333,7 +345,7 @@
         "url": "https://github.com/cheahjs/free-llm-api-resources"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.805Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.247Z",
     "notes": "Free tier, no credit card. Ultra-fast LPU inference. [^2]",
     "baseUrl": "https://api.groq.com/openai/v1",
     "freeSummary": "",
@@ -353,13 +365,14 @@
       "image",
       "text"
     ],
+    "logoUrl": "/logos/hugging-face.png",
     "sources": [
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.805Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.247Z",
     "notes": "100K monthly Inference Provider credits for free users. Routes to Fireworks, Together, Hyperbolic, Nebius, Novita, DeepInfra and others. Thousands of models.",
     "baseUrl": "https://router.huggingface.co/v1",
     "maxContext": "131K"
@@ -374,13 +387,14 @@
     "capabilities": [
       "text"
     ],
+    "logoUrl": "/logos/huggingface-inference-providers.png",
     "sources": [
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.806Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.248Z",
     "freeSummary": ""
   },
   {
@@ -399,7 +413,7 @@
         "url": "https://github.com/cheahjs/free-llm-api-resources"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.806Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.248Z",
     "freeSummary": ""
   },
   {
@@ -410,13 +424,14 @@
     "domain": "inference.net",
     "modelCount": 0,
     "capabilities": [],
+    "logoUrl": "/logos/inferencenet.png",
     "sources": [
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.806Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.248Z",
     "freeSummary": ""
   },
   {
@@ -430,13 +445,14 @@
     "capabilities": [
       "text"
     ],
+    "logoUrl": "/logos/kilo-code.png",
     "sources": [
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.805Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.247Z",
     "notes": "Free models with no credit card required. `kilo-auto/free` auto-router routes to minimax/minimax-m2.5:free (80%) and stepfun/step-3.5-flash:free (20%). [^5]",
     "baseUrl": "https://api.kilo.ai/api/gateway",
     "maxContext": "262K"
@@ -452,13 +468,14 @@
     "capabilities": [
       "text"
     ],
+    "logoUrl": "/logos/llm7io.png",
     "sources": [
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.805Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.247Z",
     "notes": "Zero-friction API gateway. No registration needed for basic access. 30+ models. GDPR-compliant.",
     "baseUrl": "https://api.llm7.io/v1",
     "maxContext": "32K"
@@ -473,13 +490,14 @@
     "capabilities": [
       "text"
     ],
+    "logoUrl": "/logos/mistral-codestral.png",
     "sources": [
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.806Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.248Z",
     "freeSummary": ""
   },
   {
@@ -492,13 +510,14 @@
     "capabilities": [
       "text"
     ],
+    "logoUrl": "/logos/mistral-la-plateforme.png",
     "sources": [
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.806Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.248Z",
     "freeSummary": ""
   },
   {
@@ -514,13 +533,14 @@
       "image",
       "text"
     ],
+    "logoUrl": "/logos/mistral-ai.png",
     "sources": [
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.805Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.247Z",
     "notes": "Free \"Experiment\" plan, no credit card. ~1B tokens/month. Prompts may be used to improve models.",
     "baseUrl": "https://api.mistral.ai/v1",
     "maxContext": "256K"
@@ -533,13 +553,14 @@
     "domain": "modal.com",
     "modelCount": 0,
     "capabilities": [],
+    "logoUrl": "/logos/modal.png",
     "sources": [
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.806Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.248Z",
     "freeSummary": ""
   },
   {
@@ -554,13 +575,14 @@
       "image",
       "text"
     ],
+    "logoUrl": "/logos/modelscope.png",
     "sources": [
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.805Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.247Z",
     "notes": "Free API-Inference for registered users. Requires Alibaba Cloud account binding + real-name verification. [^6]",
     "baseUrl": "https://api-inference.modelscope.cn/v1"
   },
@@ -587,7 +609,7 @@
         "url": "https://github.com/cheahjs/free-llm-api-resources"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.805Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.247Z",
     "notes": "$1 free signup credits, no credit card required. 60+ open-source models via OpenAI-compatible API. EU-based. [^10]",
     "baseUrl": "https://api.studio.nebius.com/v1",
     "freeSummary": "",
@@ -601,13 +623,14 @@
     "domain": "nlpcloud.com",
     "modelCount": 0,
     "capabilities": [],
+    "logoUrl": "/logos/nlp-cloud.png",
     "sources": [
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.806Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.248Z",
     "freeSummary": ""
   },
   {
@@ -618,13 +641,14 @@
     "domain": "novita.ai",
     "modelCount": 0,
     "capabilities": [],
+    "logoUrl": "/logos/novita.png",
     "sources": [
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.806Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.248Z",
     "freeSummary": ""
   },
   {
@@ -644,7 +668,7 @@
         "url": "https://github.com/mnfst/awesome-free-llm-apis"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.805Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.247Z",
     "notes": "$5 free signup credits, no credit card required. EU-sovereign provider; data centers in Norway. \"No rate limits, no cold starts.\" [^11]",
     "baseUrl": "https://inference.api.nscale.com/v1",
     "maxContext": "256K"
@@ -676,7 +700,7 @@
         "url": "https://github.com/cheahjs/free-llm-api-resources"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.802Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.245Z",
     "apiKeyUrl": "https://build.nvidia.com/explore/discover",
     "baseUrl": "https://integrate.api.nvidia.com/v1",
     "freeSummary": "",
@@ -694,13 +718,14 @@
     "capabilities": [
       "text"
     ],
+    "logoUrl": "/logos/ollama-cloud.png",
     "sources": [
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.806Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.247Z",
     "notes": "Free tier with qualitative usage limits. 400+ models from Ollama library. Not OpenAI SDK-compatible; uses [Ollama API](https://docs.ollama.com/cloud). [^3]",
     "baseUrl": "https://api.ollama.com",
     "maxContext": "262K"
@@ -715,13 +740,14 @@
     "capabilities": [
       "text"
     ],
+    "logoUrl": "/logos/opencode-zen.png",
     "sources": [
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.806Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.248Z",
     "freeSummary": ""
   },
   {
@@ -736,6 +762,7 @@
       "image",
       "text"
     ],
+    "logoUrl": "/logos/openrouter.png",
     "sources": [
       {
         "name": "freellm.net",
@@ -750,7 +777,7 @@
         "url": "https://github.com/cheahjs/free-llm-api-resources"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.800Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.244Z",
     "apiKeyUrl": "https://openrouter.ai/keys",
     "baseUrl": "https://openrouter.ai/api/v1",
     "freeSummary": "20 requests/minute 50 requests/day Up to 1000 requests/day with $10 lifetime topup Models share a common quota.",
@@ -770,13 +797,14 @@
       "image",
       "text"
     ],
+    "logoUrl": "/logos/ovhcloud-ai-endpoints.png",
     "sources": [
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.806Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.247Z",
     "notes": "Free anonymous tier (no API key, no signup): 2 RPM per IP per model. 40+ open-weight models hosted in EU. OpenAI SDK-compatible. [^7]",
     "baseUrl": "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
     "maxContext": "262K"
@@ -791,13 +819,14 @@
     "capabilities": [
       "text"
     ],
+    "logoUrl": "/logos/sambanova-cloud.png",
     "sources": [
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.806Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.248Z",
     "freeSummary": ""
   },
   {
@@ -816,7 +845,7 @@
         "url": "https://github.com/cheahjs/free-llm-api-resources"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.806Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.248Z",
     "freeSummary": ""
   },
   {
@@ -830,13 +859,14 @@
     "capabilities": [
       "text"
     ],
+    "logoUrl": "/logos/siliconflow.png",
     "sources": [
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.806Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.247Z",
     "notes": "3 permanently free models. Free tier capped at 50 req/day; ≥10 CNY lifetime purchase raises cap to 1,000/day. 200+ paid models also available. ## Glossary ## Contributing Know a free tier that's missing? [Open a PR](contributing.md). Include the provider, endpoint, rate limits (link to their docs), and a few notable models. Trial credits and time-limited promos don't count. [^1]: Free tier not available in the EU, UK, or Switzerland ([available regions](https://ai.google.dev/gemini-api/docs/available-regions)). [^2]: Groq rate limits vary by model. Llama 4 Maverick is limited to 500 RPD. Most other models get 14,400 RPD ([rate limits](https://console.groq.com/docs/rate-limits)). [^3]: Ollama Cloud measures usage by GPU time, not tokens or requests. Free tier described as \"light usage\" with session limits resetting every 5 hours and weekly limits every 7 days. Pro (50x more) and Max (250x more) plans available. Not OpenAI SDK-compatible; uses the Ollama API. [^4]: Free models default to 50 RPD per model. A one-time purchase of $10+ in credits unlocks 1,000 RPD for free models. OpenRouter also offers a [Free Models Router](https://openrouter.ai/docs/guides/routing/routers/free-models-router) (`openrouter/free`) and [model fallbacks](https://openrouter.ai/docs/guides/routing/model-fallbacks) for chaining models in priority order. Free providers may log prompts for training. [^5]: Kilo Code free model list may change over time. nvidia/nemotron-3-super-120b-a12b:free is for trial use only — prompts are logged by NVIDIA. Auto-router `kilo-auto/free` routes to minimax/minimax-m2.5:free (80%) and stepfun/step-3.5-flash:free (20%). [^6]: API-Inference is free for registered users. Current published limits are 2,000 requests/day per user (total across models), with per-model daily quotas dynamically adjusted and capped at 500; concurrency is also dynamically rate-limited. Requires Alibaba Cloud account binding and real-name verification ([limits](https://modelscope.cn/docs/model-service/API-Inference/limits), [intro](https://modelscope.cn/docs/model-service/API-Inference/intro)). [^7]: OVHcloud AI Endpoints offers a permanent free anonymous tier (2 requests per minute per IP, per model) with no signup or API key required — click \"Get your free token\" on the OVHcloud AI Endpoints site. Higher rate limits (400 RPM per Public Cloud project per model) require an API key and are billed pay-as-you-go per token; new Public Cloud accounts get up to $200 in free trial credits. Models are hosted in EU data centers. [^8]: Free quota is signup-only with 90-day expiration and only granted in the Singapore / International region. Alibaba Cloud account requires phone/email verification but no credit card. After exhaustion, pay-as-you-go applies. Use the international endpoint `dashscope-intl.aliyuncs.com`; the China region (`dashscope.aliyuncs.com`) requires real-name verification. [^9]: DeepSeek grants 5M free tokens at signup with a 30-day expiration. After expiry, pay-as-you-go applies. No credit card required at signup; prompts may be used to improve models unless explicitly opted out in account settings. [^10]: Nebius grants $1 in free credits at signup, usable without a payment method. Credit card required to top up after exhaustion. Promo codes have expiration dates; the base $1 credit typically does not expire. [^11]: Nscale grants $5 in free signup credits with no credit card required. Credits typically expire within 30–90 days (check console). Credit card required to top up. Pay-per-token after free credits exhausted. EU-sovereign, with data centers in Norway. [^12]: xAI's $25 sign-up credit is one-time. Users who opt into the data-sharing program (prompts logged) receive an additional $150/month in credits, but the program requires $5 of prior spend before activation, so it is not a pure free tier. Several older Grok models (grok-4, grok-4-fast, grok-4-1-fast) were retired on May 15, 2026 and now redirect to grok-4.3 ([models](https://docs.x.ai/developers/models)).",
     "baseUrl": "https://api.siliconflow.cn/v1",
     "maxContext": "131K"
@@ -849,13 +879,14 @@
     "domain": "console.upstage.ai",
     "modelCount": 0,
     "capabilities": [],
+    "logoUrl": "/logos/upstage.png",
     "sources": [
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.806Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.248Z",
     "freeSummary": ""
   },
   {
@@ -866,13 +897,14 @@
     "domain": "vercel.com",
     "modelCount": 0,
     "capabilities": [],
+    "logoUrl": "/logos/vercel-ai-gateway.png",
     "sources": [
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.806Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.248Z",
     "freeSummary": ""
   },
   {
@@ -886,13 +918,14 @@
     "capabilities": [
       "text"
     ],
+    "logoUrl": "/logos/xai.png",
     "sources": [
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.805Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.247Z",
     "notes": "$25 sign-up credit, no credit card required. One-time only; additional $150/month available via opt-in data-sharing program (requires prior spend). [^12]",
     "baseUrl": "https://api.x.ai/v1",
     "maxContext": "2M"
@@ -909,13 +942,14 @@
       "image",
       "text"
     ],
+    "logoUrl": "/logos/z-ai-zhipu-ai.png",
     "sources": [
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis"
       }
     ],
-    "lastSyncedAt": "2026-06-08T07:28:22.805Z",
+    "lastSyncedAt": "2026-06-08T08:22:57.247Z",
     "notes": "Permanent free models, no credit card required. ## Inference providers Third-party platforms that host open-weight models from various sources.",
     "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
     "maxContext": "200K"

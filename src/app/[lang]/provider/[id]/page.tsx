@@ -36,6 +36,8 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   };
 }
 
+export const dynamic = 'force-dynamic';
+
 export default async function ProviderPage({ params }: { params: Promise<{ id: string, lang: string }> }) {
   const resolvedParams = await params;
   const lang = (resolvedParams.lang as 'en' | 'id') || 'en';

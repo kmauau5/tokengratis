@@ -3,6 +3,8 @@ import path from "path";
 import DirectoryClient from "@/components/DirectoryClient";
 import { getDictionary } from "@/app/dictionaries";
 
+export const dynamic = 'force-dynamic';
+
 export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
   const resolvedParams = await params;
   const lang = (resolvedParams.lang as 'en' | 'id') || 'en';

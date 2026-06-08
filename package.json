@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "sync": "tsx src/scripts/sync.ts"
+    "lint": "next lint",
+    "sync": "tsx src/scripts/sync.ts && tsx src/scripts/download-logos.ts"
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.8.9",

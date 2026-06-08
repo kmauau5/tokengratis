@@ -1,58 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
 
 :root {
-  --color-ink: #050510;
-  --color-ink-soft: rgba(15, 15, 30, 0.6);
-  --color-ink-line: rgba(255, 255, 255, 0.1);
-  --color-fog: #f8fafc;
-  --color-mute: #94a3b8;
-  --color-primary: #8b5cf6;
-  --color-primary-soft: #06b6d4;
+  --color-ink: #09090b;
+  --color-ink-soft: #18181b;
+  --color-ink-line: #27272a;
+  --color-fog: #fafafa;
+  --color-mute: #a1a1aa;
+  --color-primary: #f4f4f5;
+  --color-primary-soft: #d4d4d8;
   --color-grass: #10b981;
-  --color-grass-bg: rgba(16, 185, 129, 0.15);
-  --color-grass-line: rgba(16, 185, 129, 0.3);
-  --color-glass: rgba(10, 10, 20, 0.65);
-  --color-glass-active: rgba(255, 255, 255, 0.08);
+  --color-grass-bg: rgba(16, 185, 129, 0.1);
+  --color-grass-line: rgba(16, 185, 129, 0.2);
+  --color-glass: #18181b;
+  --color-glass-active: #27272a;
   
   --font-sans: var(--font-inter), sans-serif;
   --font-serif: var(--font-outfit), sans-serif;
   
   --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 16px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
   --radius-full: 9999px;
   
-  --shadow-glow: 0 0 30px rgba(139, 92, 246, 0.3);
+  --shadow-glow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 [data-theme='light'] {
-  --color-ink: #f0fdf4;
-  --color-ink-soft: rgba(255, 255, 255, 0.7);
-  --color-ink-line: rgba(0, 0, 0, 0.08);
-  --color-fog: #0f172a;
-  --color-mute: #64748b;
-  --color-primary: #6366f1;
-  --color-primary-soft: #0ea5e9;
+  --color-ink: #ffffff;
+  --color-ink-soft: #f4f4f5;
+  --color-ink-line: #e4e4e7;
+  --color-fog: #09090b;
+  --color-mute: #71717a;
+  --color-primary: #18181b;
+  --color-primary-soft: #27272a;
   --color-grass: #059669;
-  --color-grass-bg: rgba(16, 185, 129, 0.15);
-  --color-grass-line: rgba(16, 185, 129, 0.3);
-  --color-glass: rgba(255, 255, 255, 0.75);
-  --color-glass-active: rgba(0, 0, 0, 0.05);
-  --shadow-glow: 0 10px 40px rgba(99, 102, 241, 0.2);
-}
-
-@keyframes orb-float-1 {
-  0% { transform: translate(0, 0) scale(1); }
-  33% { transform: translate(5vw, -5vh) scale(1.1); }
-  66% { transform: translate(-2vw, 4vh) scale(0.9); }
-  100% { transform: translate(0, 0) scale(1); }
-}
-
-@keyframes orb-float-2 {
-  0% { transform: translate(0, 0) scale(1); }
-  33% { transform: translate(-5vw, 6vh) scale(1.2); }
-  66% { transform: translate(4vw, -3vh) scale(0.8); }
-  100% { transform: translate(0, 0) scale(1); }
+  --color-grass-bg: rgba(16, 185, 129, 0.1);
+  --color-grass-line: rgba(16, 185, 129, 0.2);
+  --color-glass: #f4f4f5;
+  --color-glass-active: #e4e4e7;
+  --shadow-glow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 * {
@@ -69,36 +55,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.5;
   min-height: 100vh;
-  position: relative;
-  overflow-x: hidden;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  top: -10%;
-  left: -10%;
-  width: 50vw;
-  height: 50vw;
-  background: radial-gradient(circle, rgba(139,92,246,0.15) 0%, rgba(139,92,246,0) 70%);
-  border-radius: 50%;
-  z-index: -1;
-  pointer-events: none;
-  animation: orb-float-1 20s infinite ease-in-out;
-}
-
-body::after {
-  content: "";
-  position: fixed;
-  bottom: -20%;
-  right: -10%;
-  width: 60vw;
-  height: 60vw;
-  background: radial-gradient(circle, rgba(6,182,212,0.1) 0%, rgba(6,182,212,0) 70%);
-  border-radius: 50%;
-  z-index: -1;
-  pointer-events: none;
-  animation: orb-float-2 25s infinite ease-in-out reverse;
 }
 
 a {
@@ -125,16 +81,13 @@ button {
 }
 
 .glass-nav {
-  background: var(--color-glass);
-  backdrop-filter: blur(12px);
+  background: var(--color-ink-soft);
   border: 1px solid var(--color-ink-line);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .card {
   background-color: var(--color-ink-soft);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
   border: 1px solid var(--color-ink-line);
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -160,10 +113,10 @@ button {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-soft));
-  color: #fff;
+  background: var(--color-fog);
+  color: var(--color-ink);
   padding: 8px 16px;
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-sm);
   font-weight: 600;
   font-size: 14px;
   transition: opacity 0.2s, box-shadow 0.2s;
@@ -177,13 +130,11 @@ button {
 
 .input-search {
   width: 100%;
-  background-color: var(--color-ink-soft);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
+  background-color: var(--color-ink);
   border: 1px solid var(--color-ink-line);
   color: var(--color-fog);
-  padding: 12px 16px 12px 40px;
-  border-radius: var(--radius-lg);
+  padding: 10px 16px;
+  border-radius: var(--radius-md);
   font-size: 14px;
   transition: border-color 0.2s, box-shadow 0.2s;
 }

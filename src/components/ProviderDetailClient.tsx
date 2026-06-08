@@ -60,7 +60,20 @@ export default function ProviderDetailClient({ provider, models = [], dict, lang
           <div className={styles.headerContent}>
             <div className={styles.logoWrapper}>
               {provider.logoUrl ? (
-                <img src={provider.logoUrl} alt={provider.name} className={styles.logo} />
+                <>
+                  <img 
+                    src={provider.logoUrl} 
+                    alt={provider.name} 
+                    className={styles.logo}
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                      if (e.currentTarget.nextElementSibling) {
+                        (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex';
+                      }
+                    }}
+                  />
+                  <div className={styles.logoFallback} style={{ display: 'none' }}>{provider.name.charAt(0)}</div>
+                </>
               ) : (
                 <div className={styles.logoFallback}>{provider.name.charAt(0)}</div>
               )}
@@ -86,108 +99,7 @@ export default function ProviderDetailClient({ provider, models = [], dict, lang
 
       {/* 2-COLUMN LAYOUT */}
       <div className={styles.gridContainer}>
-        {/* LEFT COLUMN */}
-        <div className={styles.mainColumn}>
-          
-          <div className={styles.card}>
-            <h2 className={styles.cardTitle}>{dict.provider.notes_source}</h2>
-            <p className={styles.cardText}>{provider.notes || dict.directory.no_desc}</p>
-          </div>
-
-          <div className={styles.card}>
-            <h2 className={styles.cardTitle}>{dict.provider.claim_title}</h2>
-            <p className={styles.cardSubtitle}>{dict.provider.claim_subtitle}</p>
-            <ol className={styles.claimSteps}>
-              <li>
-                <a href={provider.apiKeyUrl || "#"} target="_blank" rel="noreferrer" className={styles.linkText}>
-                  {dict.provider.claim_step1} {provider.name} ↗
-                </a>
-              </li>
-              <li>{dict.provider.claim_step2}</li>
-              <li>{dict.provider.claim_step3}</li>
-              <li>
-                {dict.provider.claim_step4} <code className={styles.codeSnippet}>{provider.baseUrl || "https://api.example.com"}</code> {dict.provider.claim_step4_sdk}
-              </li>
-            </ol>
-          </div>
-
-          <div className={styles.card}>
-            <div className={styles.tableHeaderSection}>
-              <h2 className={styles.cardTitle}>{dict.provider.models_available} ({filteredModels.length})</h2>
-              <input
-                type="text"
-                className={styles.searchInput}
-                placeholder={dict.provider.search_model}
-                value={searchTerm}
-                onChange={(e) => {
-                  setSearchTerm(e.target.value);
-                  setCurrentPage(1);
-                }}
-              />
-            </div>
-            
-            <div className={styles.tableWrapper}>
-              <table className={styles.modelsTable}>
-                <thead>
-                  <tr>
-                    <th>{dict.provider.table_model}</th>
-                    <th>{dict.provider.table_modality}</th>
-                    <th>{dict.provider.table_context}</th>
-                    <th>{dict.provider.table_output}</th>
-                    <th>{dict.provider.table_ratelimit}</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {currentModels.length > 0 ? (
-                    currentModels.map((model: any, idx: number) => (
-                      <tr key={idx}>
-                        <td>
-                          <div className={styles.modelName}>{model.name}</div>
-                          {model.id && <div className={styles.modelId}>{model.id}</div>}
-                        </td>
-                        <td>{Array.isArray(model.modality) ? model.modality.join(", ") : model.modality}</td>
-                        <td className={styles.fontBold}>{model.context}</td>
-                        <td>{model.output || "—"}</td>
-                        <td>{model.rateLimit || "N/A"}</td>
-                      </tr>
-                    ))
-                  ) : (
-                    <tr>
-                      <td colSpan={5} style={{ textAlign: "center", padding: "32px" }}>
-                        Data tidak ditemukan
-                      </td>
-                    </tr>
-                  )}
-                </tbody>
-              </table>
-            </div>
-
-            <div className={styles.pagination}>
-              <div className={styles.pageInfo}>
-                {dict.provider.page} {filteredModels.length > 0 ? currentPage : 0}/{totalPages} · {filteredModels.length} {dict.provider.models}
-              </div>
-              <div className={styles.pageControls}>
-                <button 
-                  onClick={handlePrev} 
-                  disabled={currentPage === 1}
-                  className={styles.pageBtn}
-                >
-                  &larr; {dict.provider.prev}
-                </button>
-                <button 
-                  onClick={handleNext} 
-                  disabled={currentPage === totalPages || totalPages === 0}
-                  className={styles.pageBtn}
-                >
-                  {dict.provider.next} &rarr;
-                </button>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        {/* RIGHT COLUMN */}
+        {/* LEFT COLUMN (SIDEBAR) */}
         <div className={styles.sidebarColumn}>
           <div className={styles.card}>
             <a href={provider.apiKeyUrl || "#"} target="_blank" rel="noreferrer" className={styles.primaryBtn}>
@@ -224,7 +136,7 @@ export default function ProviderDetailClient({ provider, models = [], dict, lang
               <label className={styles.sidebarLabel}>{dict.provider.data_source}</label>
               <div style={{ display: "flex", flexDirection: "column", gap: "8px", marginTop: "8px" }}>
                 {provider.sources && provider.sources.map((src: any, idx: number) => (
-                  <a key={idx} href={src.url} target="_blank" rel="noreferrer" className={styles.sourceLink} style={{ fontSize: "13px", color: "var(--color-ink)", textDecoration: "underline" }}>
+                  <a key={idx} href={src.url} target="_blank" rel="noreferrer" className={styles.sourceLink} style={{ fontSize: "13px", color: "var(--color-fog)", textDecoration: "underline" }}>
                     {src.name}
                   </a>
                 ))}
@@ -236,7 +148,108 @@ export default function ProviderDetailClient({ provider, models = [], dict, lang
                 </p>
               )}
             </div>
+          </div>
+        </div>
 
+        {/* RIGHT COLUMN (MAIN CONTENT) */}
+        <div className={styles.mainColumn}>
+          
+          <div className={styles.card}>
+            <h2 className={styles.cardTitle}>{dict.provider.notes_source}</h2>
+            <p className={styles.cardText}>{provider.notes || dict.directory.no_desc}</p>
+          </div>
+
+          <div className={styles.card}>
+            <h2 className={styles.cardTitle}>{dict.provider.claim_title}</h2>
+            <p className={styles.cardSubtitle}>{dict.provider.claim_subtitle}</p>
+            <ol className={styles.claimSteps}>
+              <li>
+                <a href={provider.apiKeyUrl || "#"} target="_blank" rel="noreferrer" className={styles.linkText}>
+                  {dict.provider.claim_step1} {provider.name} ↗
+                </a>
+              </li>
+              <li>{dict.provider.claim_step2}</li>
+              <li>{dict.provider.claim_step3}</li>
+              <li>
+                {dict.provider.claim_step4} <code className={styles.codeSnippet}>{provider.baseUrl || "https://api.example.com"}</code> {dict.provider.claim_step4_sdk}
+              </li>
+            </ol>
+          </div>
+
+        </div>
+      </div>
+
+      {/* FULL WIDTH MODELS TABLE */}
+      <div className={styles.card} style={{ marginTop: "24px" }}>
+        <div className={styles.tableHeaderSection}>
+          <h2 className={styles.cardTitle}>{dict.provider.models_available} ({filteredModels.length})</h2>
+          <input
+            type="text"
+            className={styles.searchInput}
+            placeholder={dict.provider.search_model}
+            value={searchTerm}
+            onChange={(e) => {
+              setSearchTerm(e.target.value);
+              setCurrentPage(1);
+            }}
+          />
+        </div>
+        
+        <div className={styles.tableWrapper}>
+          <table className={styles.modelsTable}>
+            <thead>
+              <tr>
+                <th>{dict.provider.table_model}</th>
+                <th>{dict.provider.table_modality}</th>
+                <th>{dict.provider.table_context}</th>
+                <th>{dict.provider.table_output}</th>
+                <th>{dict.provider.table_ratelimit}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {currentModels.length > 0 ? (
+                currentModels.map((model: any, idx: number) => (
+                  <tr key={idx}>
+                    <td>
+                      <div className={styles.modelName}>{model.name}</div>
+                      {model.id && <div className={styles.modelId}>{model.id}</div>}
+                    </td>
+                    <td>{Array.isArray(model.modality) ? model.modality.join(", ") : model.modality}</td>
+                    <td className={styles.fontBold}>{model.context}</td>
+                    <td>{model.output || "—"}</td>
+                    <td>{model.rateLimit || "N/A"}</td>
+                  </tr>
+                ))
+              ) : (
+                <tr>
+                  <td colSpan={5} style={{ textAlign: "center", padding: "32px" }}>
+                    Data tidak ditemukan
+                  </td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+
+        <div className={styles.pagination}>
+          <div className={styles.pageInfo}>
+            {dict.provider.page} {filteredModels.length > 0 ? currentPage : 0}/{totalPages} · {filteredModels.length} {dict.provider.models}
+          </div>
+          <div className={styles.pageControls}>
+            <button 
+              onClick={handlePrev} 
+              disabled={currentPage === 1}
+              className={styles.pageBtn}
+            >
+              &larr; {dict.provider.prev}
+            </button>
+            <button 
+              onClick={handleNext} 
+              disabled={currentPage === totalPages || totalPages === 0}
+              className={styles.pageBtn}
+            >
+              {dict.provider.next} &rarr;
+            </button>
           </div>
         </div>
       </div>

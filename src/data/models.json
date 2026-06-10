@@ -2553,20 +2553,6 @@
     "source": "freellm.net"
   },
   {
-    "id": "openrouter-google-gemma-4-31b",
-    "providerSlug": "openrouter",
-    "modelId": "google-gemma-4-31b",
-    "name": "Google: Gemma 4 31B",
-    "modality": [
-      "text",
-      "image"
-    ],
-    "context": "262K",
-    "output": "33K",
-    "rateLimit": "See provider page",
-    "source": "freellm.net"
-  },
-  {
     "id": "openrouter-googlegemma-4-26b-a4b-itfree",
     "providerSlug": "openrouter",
     "modelId": "googlegemma-4-26b-a4b-itfree",
@@ -2727,6 +2713,20 @@
       "text"
     ],
     "source": "cheahjs"
+  },
+  {
+    "id": "openrouter-nex-agi-nex-n2-pro",
+    "providerSlug": "openrouter",
+    "modelId": "nex-agi-nex-n2-pro",
+    "name": "Nex AGI: Nex-N2-Pro",
+    "modality": [
+      "text",
+      "image"
+    ],
+    "context": "262K",
+    "output": "262K",
+    "rateLimit": "See provider page",
+    "source": "freellm.net"
   },
   {
     "id": "openrouter-nvidia-nemotron-3-nano-omni",

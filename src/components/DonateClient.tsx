@@ -4,20 +4,25 @@ import Link from "next/link";
 import styles from "@/app/[lang]/donate/Donate.module.css";
 
 const platforms = [
-  // International Platforms
-  { id: 'buymeacoffee', name: 'Buy Me a Coffee', color: '#fcd34d', desc: 'Support via Buy Me a Coffee' },
-  { id: 'kofi', name: 'Ko-fi', color: '#ec4899', desc: 'Support via Ko-fi' },
-  { id: 'patreon', name: 'Patreon', color: '#f97316', desc: 'Support via Patreon' },
-  { id: 'paypal', name: 'PayPal Donate', color: '#0ea5e9', desc: 'Support via PayPal' },
-  { id: 'gumroad', name: 'Gumroad', color: '#ff90e8', desc: 'Support via Gumroad' },
-  { id: 'stripe', name: 'Stripe Payment', color: '#6366f1', desc: 'Support via Stripe' },
-  { id: 'lemonsqueezy', name: 'Lemon Squeezy', color: '#eab308', desc: 'Support via Lemon Squeezy' },
-  // Indonesian Platforms
-  { id: 'saweria', name: 'Saweria', color: '#f59e0b', desc: 'Support via Saweria (GoPay, OVO, QRIS)' },
-  { id: 'trakteer', name: 'Trakteer', color: '#ef4444', desc: 'Support us on Trakteer' },
-  { id: 'sociabuzz', name: 'SociaBuzz TRIBE', color: '#3b82f6', desc: 'Support us on SociaBuzz' },
-  { id: 'karyakarsa', name: 'KaryaKarsa', color: '#10b981', desc: 'Support us on KaryaKarsa' },
-  { id: 'nihbuatjajan', name: 'Nih Buat Jajan', color: '#8b5cf6', desc: 'Support us on Nih Buat Jajan' },
+  // Active International Platforms
+  { id: 'paypal', name: 'PayPal Donate', color: '#0ea5e9', desc: 'Support via PayPal', link: 'https://paypal.me/kmauau' },
+  { id: 'kofi', name: 'Ko-fi', color: '#ec4899', desc: 'Support via Ko-fi', link: 'https://ko-fi.com/kmauau' },
+  { id: 'patreon', name: 'Patreon', color: '#f97316', desc: 'Support via Patreon', link: 'https://www.patreon.com/16206997/join' },
+  
+  // Active Indonesian Platforms
+  { id: 'saweria', name: 'Saweria', color: '#f59e0b', desc: 'Support via Saweria (GoPay, OVO, QRIS)', link: 'https://saweria.co/kmauau' },
+  { id: 'trakteer', name: 'Trakteer', color: '#ef4444', desc: 'Support us on Trakteer', link: 'https://trakteer.id/kmauau' },
+  { id: 'sociabuzz', name: 'SociaBuzz TRIBE', color: '#3b82f6', desc: 'Support us on SociaBuzz', link: 'https://sociabuzz.com/kmauau/tribe' },
+
+  // Other International Platforms
+  { id: 'buymeacoffee', name: 'Buy Me a Coffee', color: '#fcd34d', desc: 'Support via Buy Me a Coffee', link: '#' },
+  { id: 'gumroad', name: 'Gumroad', color: '#ff90e8', desc: 'Support via Gumroad', link: '#' },
+  { id: 'stripe', name: 'Stripe Payment', color: '#6366f1', desc: 'Support via Stripe', link: '#' },
+  { id: 'lemonsqueezy', name: 'Lemon Squeezy', color: '#eab308', desc: 'Support via Lemon Squeezy', link: '#' },
+
+  // Other Indonesian Platforms
+  { id: 'karyakarsa', name: 'KaryaKarsa', color: '#10b981', desc: 'Support us on KaryaKarsa', link: '#' },
+  { id: 'nihbuatjajan', name: 'Nih Buat Jajan', color: '#8b5cf6', desc: 'Support us on Nih Buat Jajan', link: '#' },
 ];
 
 export default function DonateClient({ dict, lang }: { dict: any; lang: string }) {
@@ -37,12 +42,16 @@ export default function DonateClient({ dict, lang }: { dict: any; lang: string }
 
       <div className={styles.grid}>
         {platforms.map((p) => (
-          <div 
+          <a 
             key={p.id} 
+            href={p.link}
+            target="_blank"
+            rel="noreferrer"
             className={styles.card}
             style={{ 
               '--hover-color': p.color, 
-              '--hover-shadow': `${p.color}1a` 
+              '--hover-shadow': `${p.color}1a`,
+              textDecoration: 'none'
             } as React.CSSProperties}
           >
             <div 
@@ -53,10 +62,10 @@ export default function DonateClient({ dict, lang }: { dict: any; lang: string }
             </div>
             <h3 className={styles.cardTitle}>{p.name}</h3>
             <p className={styles.cardDesc}>{p.desc}</p>
-            <a href="#" target="_blank" rel="noreferrer" className={`${styles.actionBtn} ${styles.btnSecondary}`}>
+            <span className={`${styles.actionBtn} ${styles.btnSecondary}`}>
               {dict.donate.btn_donate}
-            </a>
-          </div>
+            </span>
+          </a>
         ))}
       </div>
     </div>

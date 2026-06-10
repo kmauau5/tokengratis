@@ -31,7 +31,8 @@
     "table_action": "Action",
     "source_title": "Data Sources",
     "source_desc": "Information on this site is automatically aggregated from open community sources such as",
-    "source_desc_2": "Our role is strictly as an aggregator to make searching easier for you. We do not own this data, nor do we verify its absolute accuracy. Each provider profile displayed is the result of raw synchronization from the combined references above."
+    "source_desc_2": "Our role is strictly as an aggregator to make searching easier for you. We do not own this data, nor do we verify its absolute accuracy. Each provider profile displayed is the result of raw synchronization from the combined references above.",
+    "last_synced": "Last synced at:"
   },
   "provider": {
     "back": "Back to directory",

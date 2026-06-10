@@ -31,7 +31,8 @@
     "table_action": "Aksi",
     "source_title": "Sumber Data",
     "source_desc": "Informasi pada situs ini dihimpun secara otomatis dari sumber terbuka seperti komunitas",
-    "source_desc_2": "Peran kami murni sebagai pengumpul (agregator) agar Anda lebih mudah mencarinya. Kami bukanlah pemilik data tersebut, dan bukan pula pihak yang memverifikasi keakuratannya. Setiap profil provider yang tampil merupakan hasil sinkronisasi mentah dari gabungan referensi di atas."
+    "source_desc_2": "Peran kami murni sebagai pengumpul (agregator) agar Anda lebih mudah mencarinya. Kami bukanlah pemilik data tersebut, dan bukan pula pihak yang memverifikasi keakuratannya. Setiap profil provider yang tampil merupakan hasil sinkronisasi mentah dari gabungan referensi di atas.",
+    "last_synced": "Terakhir disinkronisasi:"
   },
   "provider": {
     "back": "Kembali ke direktori",

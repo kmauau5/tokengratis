@@ -2,11 +2,13 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./ProviderDetail.module.css";
 
 export default function ProviderDetailClient({ provider, models = [], dict, lang }: { provider: any, models: any[], dict: any, lang: string }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
+
   const itemsPerPage = 5;
   const filteredModels = models.filter((m: any) =>
     m.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -61,9 +63,12 @@ export default function ProviderDetailClient({ provider, models = [], dict, lang
             <div className={styles.logoWrapper}>
               {provider.logoUrl ? (
                 <>
-                  <img 
+                  <Image 
                     src={provider.logoUrl} 
                     alt={provider.name} 
+                    width={80}
+                    height={80}
+                    style={{ objectFit: 'contain' }}
                     className={styles.logo}
                     onError={(e) => {
                       e.currentTarget.style.display = 'none';
@@ -106,16 +111,18 @@ export default function ProviderDetailClient({ provider, models = [], dict, lang
               {dict.provider.get_api_key}
             </a>
             
-            <div className={styles.sidebarSection}>
-              <label className={styles.sidebarLabel}>{dict.provider.base_url}</label>
-              <input 
-                type="text" 
-                readOnly 
-                value={provider.baseUrl || ""} 
-                className={styles.readonlyInput} 
-                onClick={(e) => (e.target as HTMLInputElement).select()}
-              />
-            </div>
+            {provider.baseUrl && (
+              <div className={styles.sidebarSection}>
+                <label className={styles.sidebarLabel}>{dict.provider.base_url}</label>
+                <input 
+                  type="text" 
+                  readOnly 
+                  value={provider.baseUrl} 
+                  className={styles.readonlyInput} 
+                  onClick={(e) => (e.target as HTMLInputElement).select()}
+                />
+              </div>
+            )}
 
             <div className={styles.sidebarStats}>
               <div className={styles.statRow}>
@@ -143,8 +150,8 @@ export default function ProviderDetailClient({ provider, models = [], dict, lang
               </div>
               {provider.lastSyncedAt && (
                 <p className={styles.sourceText} style={{ marginTop: "12px", fontSize: "12px", color: "var(--color-mute)" }}>
-                  Terakhir disinkronisasi:<br/>
-                  {new Date(provider.lastSyncedAt).toLocaleString('id-ID', { dateStyle: 'long', timeStyle: 'short' })}
+                  {dict.directory.last_synced}<br/>
+                  {new Date(provider.lastSyncedAt).toLocaleString(lang === 'en' ? 'en-US' : 'id-ID', { dateStyle: 'long', timeStyle: 'short' })}
                 </p>
               )}
             </div>
